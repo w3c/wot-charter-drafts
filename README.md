@@ -6,7 +6,7 @@ As decided in the [WebConf on 27 Apr 2016](https://www.w3.org/2016/04/27-wot-min
 
 ## Process
 
-* We start with a charter template only containing boilerplate (i.e., no specific content) in https://github.com/w3c/wot/tree/master/charters
+* We start with a charter template only containing boilerplate (i.e., no specific content) in https://github.com/w3c/wot-charter drafts
 * Each envisioned topic must be formulated in an individual draft and must open a [pull-request](https://help.github.com/articles/using-pull-requests/) ("PR").
 * We discuss the envisioned topic using GitHub comments on the [corresponding PR](https://github.com/w3c/wot/pulls) (the "Files changed" tab also allows to comment on individual lines).
 * The original author is responsible to update the open PR with new commits according to the discussion.
