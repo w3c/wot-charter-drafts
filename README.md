@@ -1,4 +1,4 @@
-# W3C Web of Things Group Charters
+# W3C Web of Things Group Charter
 
 To do: should be updated to follow latest process documented here: https://www.w3.org/Guide/process/charter.html.
 
