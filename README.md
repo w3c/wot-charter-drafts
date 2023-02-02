@@ -18,35 +18,6 @@ As decided in the [WebConf on 27 Apr 2016](https://www.w3.org/2016/04/27-wot-min
 
 Check [How to Get Involved](https://github.com/w3c/wot#how-to-get-involved) if you are unsure how to open a pull-request.
 
-## Status
-
-### WoT IG Charter
-
-#### 2016
-* [Working document](https://github.com/w3c/wot/blob/master/charters/wot-ig-2016.html)
-  * [Rendered document](http://w3c.github.io/wot/charters/wot-ig-2016.html)
-
-#### 2019
-* [Working document](https://github.com/w3c/wot/blob/master/charters/wot-ig-2019.html)
-  * [Rendered document](http://w3c.github.io/wot/charters/wot-ig-2019.html)
-* [Diff from the 2016 Charter](https://github.com/w3c/wot/blob/master/charters/diff.html)
-  * [Rendered document](http://w3c.github.io/wot/charters/diff.html)
-
-### WoT WG Charter
-
-#### 2016
-
-* [Working document](https://github.com/w3c/wot/blob/master/charters/wot-wg-2016.html)
-  * [Rendered document](http://w3c.github.io/wot/charters/wot-wg-2016.html)
-
-#### 2019
-
-To do: following only points at draft, should be updated to point to published version
-
-* [Working document](https://github.com/w3c/wot/blob/master/charters/wot-wg-charter-draft-2019.html)
-  * [Rendered document](https://cdn.statically.io/gh/w3c/wot/master/charters/wot-wg-charter-draft-2019.html?env=dev)
-
-#### 2023
-
+## WoT WG Charter 2023
 * [Working document](https://github.com/w3c/wot-charter-drafts/blob/main/wot-wg-2023-draft.html)
   * [Rendered document](https://w3c.github.io/wot-charter-drafts/wot-wg-2023-draft.html)
