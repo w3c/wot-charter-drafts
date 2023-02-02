@@ -48,5 +48,5 @@ To do: following only points at draft, should be updated to point to published v
 
 #### 2023
 
-* [Working document](https://github.com/w3c/wot/blob/master/charters/wot-wg-2023-draft.html)
-  * [Rendered document](ttps://w3c.github.io/wot-charter-drafts/wot-wg-2023-draft.html)
+* [Working document](https://github.com/w3c/wot-charter-drafts/blob/main/wot-wg-2023-draft.html)
+  * [Rendered document](https://w3c.github.io/wot-charter-drafts/wot-wg-2023-draft.html)
