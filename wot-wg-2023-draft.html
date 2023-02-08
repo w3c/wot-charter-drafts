@@ -223,19 +223,17 @@
                 TD Directory queries for geospatially-limited discovery.</dd>
 	        <dt><a href="#onboarding-workitem"><strong>Onboarding</strong></a> 
            (<a href="#architecture-deliverable">Architecture</a>,
-            <a href="#discovery-deliverable">Discovery</a>,
-            <a href="#security-deliverable">Security</a>):</dt>
+            <a href="#discovery-deliverable">Discovery</a>):</dt>
            <dd>Define lifecycle process to establish mutual trust and identification.</dd>
 	        <dt><a href="#sec-ontology-workitem"><strong>Security Scheme Ontology</strong></a>
            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#security-deliverable">Security</a>):</dt>
-           <dd>Refactor TD security schemes using TD extension ontologies.</dd>
+            <a href="#binding-deliverable">Binding Templates</a>):</dt>
+           <dd>Refactor security schemes to use Protocol Binding ontologies for protocol-specific security schemes.</dd>
           <dt><a href="#signing-workitem"><strong>Signing</strong></a> 
            (<a href="#discovery-deliverable">Discovery</a>,
-            <a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#security-deliverable">Security</a>):</dt>
-           <dd>Add support for TD signing and support signed TDs in the discovery process.
-            Requires definition of TD canonicalization.</dd>
+            <a href="#thing-description-deliverable">Thing Description</a>):</dt>
+           <dd>Add support for Thing Description signing and support signed Thing Descriptions in the Discovery process.
+            Requires definition of Thing Description canonicalization.</dd>
           <dt>
             <a href="#timeseries-workitem"><strong>Timeseries</strong></a> 
             (<a href="#thing-description-deliverable">Thing Description</a>,
@@ -362,7 +360,7 @@
 
 	<p>Details for each of these are given below.</p>
 
-  <h3 id="discovery-updates-workitem">Discovery Updates</h3>
+	<h3 id="discovery-updates-workitem">Discovery Updates</h3>
         <p>
         Various updates are expected to be needed to align the Discovery spec with updates to other
         proposed deliverables in this charter, for example updates to the information model,
@@ -436,7 +434,7 @@
         some form of onboarding process to establish mutual trust between Things and Consumers is needed.
         Having a prescriptive (but optional) process for this would be useful.
 
-        Onboarding may be part of a larger "lifecycle" which would be described in the 
+        Onboarding is part of the larger WoT Thing lifecycle which is described in the 
         Architecture document.
 
         In this work item we will define mechanisms to perform secure minimum-effort onboarding of Things 
@@ -453,21 +451,21 @@
         Currently security schemes are "baked into" the TD specification but 
         it would be more manageable and consistent to break them out 
         as separate ontologies so that all security schemes would be done via extensions. 
-        Then the TD 2.0 spec would only have to include general-purpose "structural" security schemes 
-        like <code>nosec</code> and <code>combo</code>. 
-        The security ontologies and URLs for them would be published in a new Registry Track Note.
+        For protocol-specific security schemes in particular, these should be moved to
+        the Protocol Bindings and ontologies supporting them.
+        The TD 2.0 spec would be updated to only include general-purpose "structural" security schemes 
+        and "generic" schemes that apply to all protocols.
         </p>
 
 	<h3 id="signing-workitem">Signing</h3>
         <p>
-        A mechanism for signing JSON-LD documents was under discussion in the last charter 
-        but was not mature enough to include. 
-        Adding support for RDF canonicalization and signing in alignment with those standards would 
+        Mechanisms for signing TDs documents were under discussion in the last charter 
+        but were not mature enough to include. 
+        Adding support for TD canonicalization and signing would 
         be helpful to ensure that TDs are not intercepted and modified by third parties. 
-        This may also require a definition of TD canonicalization.        
         Verifying a signature requires identity management, i.e. the verifier needs to 
         know or have trusted access to the public key of the signer.
-        Directories should be extended to verify signatures and generate new chained signatures
+        Directories need to be extended to verify signatures and generate new chained signatures
         as needed.
         </p>
   <h3 id="timeseries-workitem">Timeseries</h3>
@@ -562,7 +560,7 @@
       This is problematic for comparing TDs or more importantly, for signing them where every byte difference results in a different signature.
       Thus, the WG will develop a canonicalization algorithm based on JSON-LD.
     </p>
-    
+
     <p>
       Related Issues:
         <ul>
@@ -585,7 +583,7 @@
         In order simplify how security mechanisms are described in simple cases, the WG will propose a way to use them with
         combining the definition and usage into a single term.
       </p>
-      
+
       <p>
         Related Issues:
       <ul>
@@ -607,7 +605,7 @@
         This makes it difficult to manage TDs and results in different behavior across versioned TD repositories.
         The WG will define the semantics of versions of a TD and recommendations on how to manage different versions of TDs.
       </p>
-      
+
       <p>
         Related Issues:
         <ul>
@@ -621,7 +619,7 @@
         However, parsing, consuming and validating TDs are not normatively defined. 
         A validation process is defined but is not normative, which leads to certain ambiguities for a Consumer parsing a TD.
         Additionally, no method is proposed for validation the extensions that are used via the prefixes and the <code>@context</code>. 
-        
+
         The WG will specify normative algorithms for parsing, consuming and validating TDs to ensure interoperability of Consumers.
       </p>
     <h3 id="td-linting-workitem">TD Linting</h3>
@@ -631,7 +629,7 @@
         standardized manner.
         The WG will define the mechanism for linting TDs together with optional rules that can be used by different projects.  
       </p>
-      
+
       <p>
         Related Issues:
       <ul>
@@ -750,11 +748,7 @@
           Deliverables
         </h2>
 
-        <p><i class="todo">Updated document status is available on the <a href="https://www.w3.org/groups/wg/[shortname]/publications">group publication status page</a>. [or link to a page this group prefers to use]</i></p>
-
-        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <span class="todo">Choose one:</span> <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state
-          <span class="todo">The Working Group intends to publish the latest state of their work as Candidate Recommendation (with Snapshots) and does not intend to advance their documents to Recommendation</span>.</p>
-
+        <p>Updated document status is available on the <a href="https://www.w3.org/groups/wg/wot/publications">group publication status page</a>.</p>
         <section id="normative">
           <h3>
             Normative Specifications
@@ -763,22 +757,6 @@
             The Working Group will deliver the following W3C normative specifications:
           </p>
           <dl>
-            <dt id="thing-description-deliverable" class="spec">Web of Things (WoT) Thing Description 2.0</dt>
-            <dd>
-              <p>
-                This specification defines the version 2.0 of the Thing Description specification.
-                This version will include features that have been postponed due to being not backwards compatible and other features that have been identified via use cases.
-              </p>
-            
-              <p class="draft-status"><b>Draft state:</b>No draft</p>
-              <p class="milestone todo"><b>Expected completion:</b> TBD</p>
-              <p><b>Adopted Draft:</b>
-                This will be a revision of the current <i>Web of Things (WoT) Thing Description 1.1</i> specification published
-                at <a href="https://www.w3.org/TR/wot-thing-description/">https://www.w3.org/TR/wot-thing-description/</a>,
-                as a Candidate Recommendation on 19 January 2023.</p>
-              </p>
-              </p>
-            </dd>
             <dt id="discovery-deliverable" class="spec">Web of Things (WoT) Discovery 1.1</dt>
             <dd>
               <p>This specification defines a Discovery process for WoT, and would be a backward-compatible
@@ -790,8 +768,7 @@
               This will be a revision of the current <i>Web of Things (WoT) Discovery</i> specification published
               at <a href="https://www.w3.org/TR/wot-discovery/">https://www.w3.org/TR/wot-discovery/</a>,
               as a Candidate Recommendation on 19 January 2023.</p>
-              </p>
-            </p></dd>
+            </dd>
             <dt id="binding-deliverable" class="spec">Web of Things (WoT) Binding Templates</dt>
             <dd>
               <p>
@@ -802,13 +779,11 @@
                   <li>3 registry sections dedicated to experimental bindings that are at least publicly available</li>
                 </ul>
               </p>
-            
+
               <p class="draft-status"><b>Draft state:</b>No draft</p>
               <p class="milestone todo"><b>Expected completion:</b> TBD</p>
               <p class="todo"><b>Adopted Draft:</b>TBD</p>
-              </p>
-              </p>
-            </dd>
+	    </dd>
           </dl>
 
         </section>
@@ -818,24 +793,25 @@
             Other Deliverables
           </h3>
           <p>
-            Other non-normative documents may be created such as:
+            Other non-normative documents may be created including:
           </p>
           <ul>
-            <li>Use case and requirement documents;</li>
-            <li>Test suite and implementation report for the specification;</li>
+            <li id="usecases-deliverable">Use Cases and Requirements;</li>
+            <li id="security-deliverable">Security and Privacy Guidelines (to be published as a W3C Note);</li>
+            <li>Test suite and implementation reports for each specification;</li>
             <li>Primer or Best Practice documents to support web developers when designing applications.</li>
           </ul>
         </section>
 
         <section id="timeline">
           <h3>Timeline</h3>
-            <p class="todo">Put here a timeline view of all deliverables.</p>
-            <ul class="todo">
+            <ul>
               <li>June 2023: First teleconference</li>
               <li>July 2023: First face-to-face meeting</li>
               <li>September 2023: Requirements and Use Cases for WoT Discovery 1.1</li>
               <li>January 2024: FPWD for WoT Discovery 1.1</li>
               <li>August 2024: CR Transition for WoT Discovery 1.1</li>
+              <li>August 2024: Updated publication of WoT Security and Privacy Guidelines as a Note</li>
               <li>December 2024: PR Transition for WoT Discovery 1.1</li>
               <li>March 2025: REC Transition for WoT Discovery 1.1</li>
             </ul>
