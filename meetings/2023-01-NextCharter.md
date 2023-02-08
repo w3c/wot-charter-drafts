@@ -1,4 +1,4 @@
-# Special Meetings to Discuss Next WoT Charter
+# Special Meetings to Discuss Next WoT Charter (First Set)
 * Calendar: https://www.w3.org/events/meetings/504ef715-9e3b-44a7-b8a5-34eab01da99a/20230116T080000
 * Dates: Jan 16-18
     - Monday Jan 16: 8am-9am Eastern; logistics [https://lists.w3.org/Archives/Member/member-wot-wg/2022Dec/0007.html Link for Members], [https://lists.w3.org/Archives/Group/group-wot-ie/2022Dec/0007.html Link for IEs]
