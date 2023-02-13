@@ -4,31 +4,40 @@ In addition to the charter, the working group provides overall work items that w
 
 - **Signing:**
   - Effected Deliverables: Discovery, Thing Description
-  - Description: Add support for Thing Description signing and support signed Thing Descriptions in the Discovery process. Requires definition of Thing Description canonicalization.
+  - Short Description: Add support for Thing Description signing and support signed Thing Descriptions in the Discovery process. Requires definition of Thing Description canonicalization.
+  - Long Description:
 - **Timeseries:**
   - Effected Deliverables: Thing Description, Binding Templates
-  - Description: Add support for describing historical values or value changes of affordances to the TD specification in an interoperable way with existing solutions.
+  - Short Description: Add support for describing historical values or value changes of affordances to the TD specification in an interoperable way with existing solutions.
+  - Long Description:
 - **Payload Driven Protocols:**
   - Effected Deliverables: Thing Description, Binding Templates, Profiles
-  - Description: Add support for describing protocols that depend on specific payload structures on top of the protocol bindings. 
+  - Short Description: Add support for describing protocols that depend on specific payload structures on top of the protocol bindings. 
+  - Long Description:
 - **Manageable Actions:**
   - Effected Deliverables: Thing Description, Profiles
-  - Description: Add support for describing actions that can be managed after their invocation.
-- **Initial / Common Connection Description:**
+  - Short Description: Add support for describing actions that can be managed after their invocation.
+  - Long Description:
+- **Initial / Common Connection Short Description:**
   - Effected Deliverables: Thing Description, Binding Templates
-  - Description: Add support for a connection description to be shared among affordance operations
+  - Short Description: Add support for a connection description to be shared among affordance operations
+  - Long Description:
 - **Canonicalization:**
   - Effected Deliverables: Thing Description, Discovery
-  - Description: Add a canonicalization algorithm.
+  - Short Description: Add a canonicalization algorithm.
+  - Long Description:
 - **Inline Security:**
   - Effected Deliverables: Thing Description
-  - Description: Add a way to describe security definitions in a simplified fashion for simple cases.
+  - Short Description: Add a way to describe security definitions in a simplified fashion for simple cases.
+  - Long Description:
 - **TD Versioning:**
   - Effected Deliverables: Thing Description, Discovery
-  - Description: Explain the semantics on how to version Thing Descriptions.
+  - Short Description: Explain the semantics on how to version Thing Descriptions.
+  - Long Description:
 - **Normative TD Parsing, Consuming and Validation:**
   - Effected Deliverables: Thing Description, Scripting API, Profiles
-  - Description: Define normative algorithms for parsing, consuming and validating Thing Descriptions.
+  - Short Description: Define normative algorithms for parsing, consuming and validating Thing Descriptions.
+  - Long Description:
 - **Linting mechanism for TDs:**
   - Effected Deliverables: Thing Description, Profiles
-  - Description: Define a linting mechanism for Thing Descriptions that allows adding additional rules.
+  - Short Description: Define a linting mechanism for Thing Descriptions that allows adding additional rules.

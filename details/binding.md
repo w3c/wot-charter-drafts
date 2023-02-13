@@ -2,42 +2,54 @@
 
 In addition to the charter, the working group provides overall work items that will be considered for the next charter work.
 
-**Binding Mechanism:**
+- **Binding Mechanism:**
   - Effected Deliverables: Binding Templates, Thing Description, Security, Profiles
-  - Description: Add normative binding mechanism
-**HTTP Protocol Binding:**
+  - Short Description: Add normative binding mechanism
+  - Long Short Description:
+- **HTTP Protocol Binding:**
   - Effected Deliverables: Binding Templates
-  - Description:Add normative HTTP binding
-**CoAP Protocol Binding:**
+  - Short Description:Add normative HTTP binding
+  - Long Short Description:
+- **CoAP Protocol Binding:**
   - Effected Deliverables: Binding Templates
-  - Description: Add normative CoAP binding
-**MQTT Protocol Binding:**
+  - Short Description: Add normative CoAP binding
+  - Long Short Description:
+- **MQTT Protocol Binding:**
   - Effected Deliverables: Binding Templates
-  - Description: Add normative MQTT binding
-**Modbus Protocol Binding:**
+  - Short Description: Add normative MQTT binding
+  - Long Short Description:
+- **Modbus Protocol Binding:**
   - Effected Deliverables: Binding Templates
-  - Description: Add normative Modbus binding
-**BACnet Protocol Binding:**
+  - Short Description: Add normative Modbus binding
+  - Long Short Description:
+- **BACnet Protocol Binding:**
   - Effected Deliverables: Binding Templates
-  - Description:Add normative BACnet binding
-**OPC UA Protocol Binding:**
+  - Short Description:Add normative BACnet binding
+  - Long Short Description:
+- **OPC UA Protocol Binding:**
   - Effected Deliverables: Binding Templates
   - Add normative OPC UA binding
-**gRPC Protocol Binding:**
+  - Long Short Description:
+- **gRPC Protocol Binding:**
   - Effected Deliverables: Binding Templates
-  - Description: Add normative gRPC binding
-**JSON Payload Binding:**
+  - Short Description: Add normative gRPC binding
+  - Long Short Description:
+- **JSON Payload Binding:**
   - Effected Deliverables: Binding Templates
-  - Description: Add normative JSON binding
-**CBOR Payload Binding:**
+  - Short Description: Add normative JSON binding
+  - Long Short Description:
+- **CBOR Payload Binding:**
   - Effected Deliverables: Binding Templates
-  - Description: Add normative CBOR binding
-**XML Payload Binding:**
+  - Short Description: Add normative CBOR binding
+  - Long Short Description:
+- **XML Payload Binding:**
   - Effected Deliverables: Binding Templates
-  - Description:Add normative XML binding
-**CloudEvents Payload Binding:**
+  - Short Description:Add normative XML binding
+  - Long Short Description:
+- **CloudEvents Payload Binding:**
   - Effected Deliverables: Binding Templates
-  - Description: Add normative CloudEvents binding
-**ECHONET Lite Web API Combination Binding:**
+  - Short Description: Add normative CloudEvents binding
+  - Long Short Description:
+- **ECHONET Lite Web API Combination Binding:**
   - Effected Deliverables: Binding Templates
-  - Description:Add normative ECHONET Lite Web API binding
+  - Short Description:Add normative ECHONET Lite Web API binding
