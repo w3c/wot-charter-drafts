@@ -1,42 +1,43 @@
-<dt><a href="#binding-mechanism-workitem"><strong>Binding Mechanism</strong></a> 
-            (<a href="#binding:-deliverable">Binding Templates</a>,
-              <a href="#thing-description-deliverable">Thing Description</a>,
-              <a href="#security-deliverable">Security</a>,
-              <a href="#profiles-deliverable">Profiles</a>):</dt>
-            <dd>Add normative binding mechanism</dd>
-          <dt><a href="#http-binding-workitem"><strong>HTTP Protocol Binding</strong></a> 
-            (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-            <dd>Add normative HTTP binding</dd>
-          <dt><a href="#coap-binding-workitem"><strong>CoAP Protocol Binding</strong></a> 
-              (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-              <dd>Add normative CoAP binding</dd>
-          <dt><a href="#mqtt-binding-workitem"><strong>MQTT Protocol Binding</strong></a> 
-            (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-            <dd>Add normative MQTT binding</dd>
-          <dt><a href="#modbus-binding-workitem"><strong>Modbus Protocol Binding</strong></a> 
-            (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-            <dd>Add normative Modbus binding</dd>
-          <dt><a href="#bacnet-binding-workitem"><strong>BACnet Protocol Binding</strong></a> 
-            (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-            <dd>Add normative BACnet binding</dd>
-          <dt><a href="#opcua-binding-workitem"><strong>OPC UA Protocol Binding</strong></a> 
-            (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-            <dd>Add normative OPC UA binding</dd>
-          <dt><a href="#grpc-binding-workitem"><strong>gRPC Protocol Binding</strong></a> 
-            (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-            <dd>Add normative gRPC binding</dd>
-          <dt><a href="#json-binding-workitem"><strong>JSON Payload Binding</strong></a> 
-            (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-            <dd>Add normative JSON binding</dd>
-          <dt><a href="#cbor-binding-workitem"><strong>CBOR Payload Binding</strong></a> 
-            (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-            <dd>Add normative CBOR binding</dd>
-          <dt><a href="#xml-binding-workitem"><strong>XML Payload Binding</strong></a> 
-            (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-            <dd>Add normative XML binding</dd>
-          <dt><a href="#cloudevents-binding-workitem"><strong>CloudEvents Payload Binding</strong></a> 
-            (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-            <dd>Add normative CloudEvents binding</dd>
-          <dt><a href="#echonet-binding-workitem"><strong>ECHONET Lite Web API Combination Binding</strong></a> 
-            (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-            <dd>Add normative ECHONET Lite Web API binding</dd>
+# Detailed Work Items for Binding Templates
+
+In addition to the charter, the working group provides overall work items that will be considered for the next charter work.
+
+**Binding Mechanism:**
+  - Effected Deliverables: Binding Templates, Thing Description, Security, Profiles
+  - Description: Add normative binding mechanism
+**HTTP Protocol Binding:**
+  - Effected Deliverables: Binding Templates
+  - Description:Add normative HTTP binding
+**CoAP Protocol Binding:**
+  - Effected Deliverables: Binding Templates
+  - Description: Add normative CoAP binding
+**MQTT Protocol Binding:**
+  - Effected Deliverables: Binding Templates
+  - Description: Add normative MQTT binding
+**Modbus Protocol Binding:**
+  - Effected Deliverables: Binding Templates
+  - Description: Add normative Modbus binding
+**BACnet Protocol Binding:**
+  - Effected Deliverables: Binding Templates
+  - Description:Add normative BACnet binding
+**OPC UA Protocol Binding:**
+  - Effected Deliverables: Binding Templates
+  - Add normative OPC UA binding
+**gRPC Protocol Binding:**
+  - Effected Deliverables: Binding Templates
+  - Description: Add normative gRPC binding
+**JSON Payload Binding:**
+  - Effected Deliverables: Binding Templates
+  - Description: Add normative JSON binding
+**CBOR Payload Binding:**
+  - Effected Deliverables: Binding Templates
+  - Description: Add normative CBOR binding
+**XML Payload Binding:**
+  - Effected Deliverables: Binding Templates
+  - Description:Add normative XML binding
+**CloudEvents Payload Binding:**
+  - Effected Deliverables: Binding Templates
+  - Description: Add normative CloudEvents binding
+**ECHONET Lite Web API Combination Binding:**
+  - Effected Deliverables: Binding Templates
+  - Description:Add normative ECHONET Lite Web API binding
