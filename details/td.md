@@ -9,7 +9,10 @@ In addition to the charter, the working group provides overall work items that w
 - **Timeseries:**
   - Effected Deliverables: Thing Description, Binding Templates
   - Short Description: Add support for describing historical values or value changes of affordances to the TD specification in an interoperable way with existing solutions.
-  - Long Description:
+  - Long Description:  Some edge and cloud services can collect property value changes or event emissions for a certain time. This data, called timeseries, can be retrieved by Consumers to display the evolution of the affordance data over time, make predictions about the future values and more. There are different serialization formats and structures of such data in existing solutions. The generic mechanism for timeseries should be introduced in the Thing Description with bindings to existing solutions illustrated in the Binding Templates
+    - Related Issues:
+      - https://github.com/w3c/wot-thing-description/issues/892
+
 - **Payload Driven Protocols:**
   - Effected Deliverables: Thing Description, Binding Templates, Profiles
   - Short Description: Add support for describing protocols that depend on specific payload structures on top of the protocol bindings. 
