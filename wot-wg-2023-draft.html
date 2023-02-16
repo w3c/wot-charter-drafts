@@ -217,11 +217,15 @@
            (<a href="#thing-description-deliverable">Thing Description</a>,
             <a href="#binding-deliverable">Binding Templates</a>):</dt>
            <dd>Refactor security schemes to use Protocol Binding ontologies for protocol-specific security schemes.</dd>
-           <dt><strong>Signing</strong> 
-           (<a href="#discovery-deliverable">Discovery</a>,
-            <a href="#thing-description-deliverable">Thing Description</a>):</dt>
-           <dd>Add support for Thing Description signing and support signed Thing Descriptions in the Discovery process.
-            Requires definition of Thing Description canonicalization.</dd>
+      <dt>
+        <a href="#canon-workitem"><strong>Canonicalization and Signing</strong></a>
+        (<a href="#thing-description-deliverable">Thing Description</a>,
+        <a href="#discovery-deliverable">Discovery</a>,
+        <a href="#profiles-deliverable">Profiles</a>):
+      </dt>
+      <dd>
+        Add canonicalization and signing algorithms to support signed Thing Descriptions in the Discovery process.
+      </dd>
           <dt><strong>Timeseries</strong> 
             (<a href="#thing-description-deliverable">Thing Description</a>,
             <a href="#binding-deliverable">Binding Templates</a>):</dt>
@@ -254,14 +258,6 @@
             Add support for a connection description to be shared among affordance operations
           </dd>
           <dt>
-            <strong>Canonicalization</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#discovery-deliverable">Discovery</a>):
-          </dt>
-          <dd>
-            Add a canonicalization algorithm.
-          </dd>
-          <dt>
             <strong>Inline Security</strong>
             (<a href="#thing-description-deliverable">Thing Description</a>):
           </dt>
@@ -282,22 +278,17 @@
             <a href="#scripting-deliverable">Scripting API</a>,
             <a href="#profiles-deliverable">Profiles</a>):
           </dt>
-          <dd>
-            Define normative algorithms for parsing, consuming and validating Thing Descriptions.
-          </dd>
           <dt>
-            <strong>Linting mechanism for TDs</strong>
+            <a href="#td-linting-workitem"><strong>Normative Linting, Parsing, Consuming and Validation mechanism for
+                TDs</strong></a>
             (<a href="#thing-description-deliverable">Thing Description</a>,
+            <a href="#scripting-deliverable">Scripting API</a>,
             <a href="#profiles-deliverable">Profiles</a>):
           </dt>
           <dd>
-            Define a linting mechanism for Thing Descriptions that allows adding additional rules.
+            Define a linting mechanism for Thing Descriptions that allows adding additional rules and normative mechanism for
+            parsing, consuming and validation of TDs for Consumers.
           </dd>
-          <dt><strong>Binding Mechanism</strong>
-            (<a href="#binding:-deliverable">Binding Templates</a>,
-              <a href="#thing-description-deliverable">Thing Description</a>,
-              <a href="#security-deliverable">Security</a>,
-              <a href="#profiles-deliverable">Profiles</a>):</dt>
             <dd>Add normative binding mechanism</dd>
           <dt><strong>Protocol Bindings</strong>
             (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
