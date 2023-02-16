@@ -218,28 +218,30 @@
           </dd>
           <dt><strong>Geolocation</strong>
             (<a href="#discovery-deliverable">Discovery</a>,
-            <a href="#thing-description-deliverable">Thing Description</a>,
+             <a href="#thing-description-deliverable">Thing Description</a>,
+             <a href="#profiles-deliverable">Profiles</a>):</dt>
+            <dd>Define mechanisms for embedding of static geolocation information in TDs, 
+                annotation of data models for dynamic geolocation, and spatial filters in
+                TD Directory queries for geospatially-limited discovery.</dd>
+          <dt><strong>Onboarding</strong>
+           (<a href="#architecture-deliverable">Architecture</a>,
+            <a href="#discovery-deliverable">Discovery</a>):</dt>
+           <dd>Define lifecycle process to establish mutual trust and identification.</dd>
+	        <dt><strong>Security Scheme Reorganization</strong>
+           (<a href="#thing-description-deliverable">Thing Description</a>,
+            <a href="#binding-deliverable">Binding Templates</a>):</dt>
+           <dd>Refactor security schemes to use Protocol Binding ontologies for protocol-specific security schemes while also 
+            enabling simpler and inline security declarations
+           </dd>
+          <dt>
+            <strong>Canonicalization and Signing</strong>
+            (<a href="#thing-description-deliverable">Thing Description</a>,
+            <a href="#discovery-deliverable">Discovery</a>,
             <a href="#profiles-deliverable">Profiles</a>):
           </dt>
-          <dd>Define mechanisms for embedding of static geolocation information in TDs,
-            annotation of data models for dynamic geolocation, and spatial filters in
-            TD Directory queries for geospatially-limited discovery.</dd>
-          <dt><strong>Onboarding</strong>
-            (<a href="#architecture-deliverable">Architecture</a>,
-            <a href="#discovery-deliverable">Discovery</a>):
-          </dt>
-          <dd>Define lifecycle process to establish mutual trust and identification.</dd>
-          <dt><strong>Security Scheme Ontology</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#binding-deliverable">Binding Templates</a>):
-          </dt>
-          <dd>Refactor security schemes to use Protocol Binding ontologies for protocol-specific security schemes.</dd>
-          <dt><strong>Signing</strong>
-            (<a href="#discovery-deliverable">Discovery</a>,
-            <a href="#thing-description-deliverable">Thing Description</a>):
-          </dt>
-          <dd>Add support for Thing Description signing and support signed Thing Descriptions in the Discovery process.
-            Requires definition of Thing Description canonicalization.</dd>
+          <dd>
+            Add canonicalization and signing algorithms to support signed Thing Descriptions in the Discovery process.
+          </dd>
           <dt><strong>Timeseries</strong>
             (<a href="#thing-description-deliverable">Thing Description</a>,
             <a href="#binding-deliverable">Binding Templates</a>):
@@ -249,14 +251,13 @@
             interoperable way with existing solutions.
           </dd>
           <dt>
-            <strong>Payload Driven Protocols</strong>
+            <strong>Connection and Payload Reuse Improvements</strong>
             (<a href="#thing-description-deliverable">Thing Description</a>,
             <a href="#binding-deliverable">Binding Templates</a>,
             <a href="#profiles-deliverable">Profiles</a>):
           </dt>
           <dd>
-            Add support for describing protocols that depend on specific payload structures on top of the protocol
-            bindings.
+            Add support for describing cases where a connection and subsequent payloads are same or similar.
           </dd>
           <dt>
             <strong>Manageable Actions</strong>
@@ -267,29 +268,6 @@
             Add support for describing actions that can be managed after their invocation.
           </dd>
           <dt>
-            <strong>Initial / Common Connection Description</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#binding-deliverable">Binding Templates</a>):
-          </dt>
-          <dd>
-            Add support for a connection description to be shared among affordance operations
-          </dd>
-          <dt>
-            <strong>Canonicalization</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#discovery-deliverable">Discovery</a>):
-          </dt>
-          <dd>
-            Add a canonicalization algorithm.
-          </dd>
-          <dt>
-            <strong>Inline Security</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>):
-          </dt>
-          <dd>
-            Add a way to describe security definitions in a simplified fashion for simple cases.
-          </dd>
-          <dt>
             <strong>TD Versioning</strong>
             (<a href="#thing-description-deliverable">Thing Description</a>,
             <a href="#discovery-deliverable">Discovery</a>):
@@ -298,35 +276,24 @@
             Explain the semantics on how to version Thing Descriptions.
           </dd>
           <dt>
-            <strong>Normative TD Parsing, Consuming and Validation</strong>
+            <strong>Normative Linting, Parsing, Consuming and Validation mechanism for TDs</strong>
             (<a href="#thing-description-deliverable">Thing Description</a>,
             <a href="#scripting-deliverable">Scripting API</a>,
             <a href="#profiles-deliverable">Profiles</a>):
           </dt>
           <dd>
-            Define normative algorithms for parsing, consuming and validating Thing Descriptions.
-          </dd>
-          <dt>
-            <strong>Linting mechanism for TDs</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#profiles-deliverable">Profiles</a>):
-          </dt>
-          <dd>
-            Define a linting mechanism for Thing Descriptions that allows adding additional rules.
+            Define a linting mechanism for Thing Descriptions that allows adding additional rules and normative mechanism for
+            parsing, consuming and validation of TDs for Consumers.
           </dd>
           <dt><strong>Binding Mechanism</strong>
             (<a href="#binding:-deliverable">Binding Templates</a>,
-            <a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#security-deliverable">Security</a>,
-            <a href="#profiles-deliverable">Profiles</a>):
-          </dt>
-          <dd>Add normative binding mechanism</dd>
-          <dt><strong>Protocol Bindings</strong>
+              <a href="#thing-description-deliverable">Thing Description</a>,
+              <a href="#security-deliverable">Security</a>,
+              <a href="#profiles-deliverable">Profiles</a>):</dt>
+            <dd>Add normative binding mechanism</dd>
+          <dt><strong>Protocol and Payload Bindings</strong>
             (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-          <dd>Define bindings for specific protocols of interest.</dd>
-          <dt><strong>Payload Bindings</strong>
-            (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-          <dd>Define bindings for payload formats of interest.</dd>
+          <dd>Define bindings for specific protocols and payloads of interest while focusing to support ecosystems.</dd>
           <dt><strong>Interoperability Profiles</strong>
             (<a href="#profiles-deliverable">Profiles</a>):</dt>
           <dd>Support out-of-the-box interoperabilty via a profiling mechanism.</dd>
