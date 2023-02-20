@@ -184,6 +184,7 @@
         as being important to advancing the Web of Things.
         The WoT building blocks are intended to complement existing
         and emerging IoT standards by focusing on enabling cross-platform and cross-domain interoperability.
+<!--
         The proposed work items are summarized in the <a href="#scope">Scope</a> section, and
         include <span class="todo">(REVISE) interoperability profiles for particular usage contexts;
           vocabulary support for new protocols, security schemes, and links;
@@ -193,6 +194,7 @@
         WoT IG <a href="https://w3c.github.io/wot/current-practices/wot-practices.html#plugfests">PlugFests</a>
         during development.
         Open-source implementations will be prioritized.
+-->
       </p>
     </div>
 
@@ -200,11 +202,21 @@
       <h2>Scope</h2>
       <!-- What exactly is in scope, and out of scope.
           For legal review. Be brief. -->
-      <p>The Working Group has the following work items in scope:</p>
+      <p>During this charter, the Working Group would:</p>
+      <ul>
+      <li>Update the Architecture, Thing Description, Profile, and Discovery specifications
+      to address major issues discovered during implementation of the 1.0 and 1.1 specifications.
+      Unlike the last charter, these would not be limited to backward-compatible updates.</li> 
+      <li>Reorganize Security Schemes and Protocol/Payload Bindings to be more modular and less specific
+      to HTTP.</li>
+      <li>Update and improve security and privacy controls.</li>
+      <li>Address the functional requirements of new use cases, such as Digital Twins.</li>
+      </ul>
 
-      <div class="summary">
-        <p style="text-align:left;font-style:italic">Scope Summary</p>
-        After each work item, in parenthesis, we identify the deliverables it may be included in.
+      <p>Specific work items are listed below, with links to the deliverables they
+      would affect.
+      After each work item, in parenthesis, we identify the deliverables it may be included in.
+      </p>
         <dl>
           <dt><strong>Discovery Updates</strong>
             (<a href="#discovery-deliverable">Discovery</a>):</dt>
@@ -298,6 +310,10 @@
             (<a href="#profiles-deliverable">Profiles</a>):</dt>
           <dd>Support out-of-the-box interoperabilty via a profiling mechanism.</dd>
         </dl>
+
+        Details for planned work items are available in a 
+        <a href="https://w3c.github.io/wot-charter-drafts/wot-wg-2023-details.html">separate document</a>.
+
       </div>
 
       <section id="section-out-of-scope">
