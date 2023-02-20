@@ -1,174 +1,158 @@
 <!DOCTYPE html>
-<!-- saved from url=(0058)https://w3c.github.io/charter-drafts/charter-template.html -->
 <html lang="en-US">
 <head>
 <meta name="generator" content=
 "HTML Tidy for HTML5 for Linux version 5.6.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Workitem Details for Web of Things Working Group
-Charter</title>
+<title>Work Item Details for Web of Things Working Group
+Charter (2023 Draft)</title>
 </head>
 <body>
+<h1>Work Item Details for Web of Things Working Group 2023 Charter Draft</h1>
+<p>The following are details of some planned work items for the 
+WoT WG charter starting in 2023, based on the current draft.
+</p>
 <dl>
 <dt><a href="#discovery-updates-workitem"><strong>Discovery
-Updates</strong></a> (<a href=
-"#discovery-deliverable">Discovery</a>):</dt>
+Updates</strong></a> (Discovery):</dt>
 <dd>Backward-compatible updates to the Discovery specification to
 support additional introduction mechanisms, align with scripting
 APIs, support all Thing Description versions (1.0, 1.1, and 2.0),
 and improve security and validation.</dd>
 <dt><a href="#discovery-thing-models-workitem"><strong>Discovery of
-Thing Models</strong></a> (<a href=
-"#discovery-deliverable">Discovery</a>):</dt>
+Thing Models</strong></a> 
+(Discovery):</dt>
 <dd>Extend discovery support to include storing and returning Thing
 Models from exploration mechanisms.</dd>
 <dt><a href="#discovery-coap-dir-workitem"><strong>Discovery CoAP
-Directory</strong></a> (<a href=
-"#discovery-deliverable">Discovery</a>):</dt>
+Directory</strong></a> 
+(Discovery):</dt>
 <dd>Add support for a CoAP API to TD Directory services supporting
 discovery.</dd>
 <dt><a href=
 "#discovery-jsonpath-query-language-workitem"><strong>Discovery
-JSON Path Query Language</strong></a> (<a href=
-"#discovery-deliverable">Discovery</a>):</dt>
+JSON Path Query Language</strong></a> (Discovery):</dt>
 <dd>Add support for JSONPath queries to TD Directory services.</dd>
 <dt><a href="#discovery-query-filters-workitem"><strong>Discovery
-Query Filters</strong></a> (<a href=
-"#discovery-deliverable">Discovery</a>):</dt>
+Query Filters</strong></a> 
+(Discovery):</dt>
 <dd>Add support for query filters for common use cases to TD
 Directory services.</dd>
 <dt><a href=
-"#geolocation-workitem"><strong>Geolocation</strong></a> (<a href=
-"#discovery-deliverable">Discovery</a>, <a href=
-"#thing-description-deliverable">Thing Description</a>, <a href=
-"#profiles-deliverable">Profiles</a>):</dt>
+"#geolocation-workitem"><strong>Geolocation</strong></a> 
+(Discovery, Thing Description, Profiles):</dt>
 <dd>Define mechanisms for embedding of static geolocation
 information in TDs, annotation of data models for dynamic
 geolocation, and spatial filters in TD Directory queries for
 geospatially-limited discovery.</dd>
 <dt><a href="#onboarding-workitem"><strong>Onboarding</strong></a>
-(<a href="#architecture-deliverable">Architecture</a>, <a href=
-"#discovery-deliverable">Discovery</a>):</dt>
+(Architecture, Discovery):</dt>
 <dd>Define lifecycle process to establish mutual trust and
 identification.</dd>
 <dt><a href="#sec-ontology-workitem"><strong>Security Scheme
-Ontology</strong></a> (<a href=
-"#thing-description-deliverable">Thing Description</a>, <a href=
-"#binding-deliverable">Binding Templates</a>):</dt>
+Ontology</strong></a> 
+(Thing Description, Binding Templates):</dt>
 <dd>Refactor security schemes to use Protocol Binding ontologies
 for protocol-specific security schemes.</dd>
 <dt><a href="#signing-workitem"><strong>Signing</strong></a>
-(<a href="#discovery-deliverable">Discovery</a>, <a href=
-"#thing-description-deliverable">Thing Description</a>):</dt>
+(Discovery, Thing Description):</dt>
 <dd>Add support for Thing Description signing and support signed
 Thing Descriptions in the Discovery process. Requires definition of
 Thing Description canonicalization.</dd>
 <dt><a href="#timeseries-workitem"><strong>Timeseries</strong></a>
-(<a href="#thing-description-deliverable">Thing Description</a>,
-<a href="#binding-deliverable">Binding Templates</a>):</dt>
+(Thing Description, Binding Templates):</dt>
 <dd>Add support for describing historical values or value changes
 of affordances to the TD specification in an interoperable way with
 existing solutions.</dd>
 <dt><a href="#payload-protocols-workitem"><strong>Payload Driven
-Protocols</strong></a> (<a href=
-"#thing-description-deliverable">Thing Description</a>, <a href=
-"#binding-deliverable">Binding Templates</a>, <a href=
-"#profiles-deliverable">Profiles</a>):</dt>
+Protocols</strong></a> 
+(Thing Description, Binding Templates, Profiles):</dt>
 <dd>Add support for describing protocols that depend on specific
 payload structures on top of the protocol bindings.</dd>
 <dt><a href="#manageable-actions-workitem"><strong>Manageable
-Actions</strong></a> (<a href=
-"#thing-description-deliverable">Thing Description</a>, <a href=
-"#profiles-deliverable">Profiles</a>):</dt>
+Actions</strong></a> 
+(Thing Description, Profiles):</dt>
 <dd>Add support for describing actions that can be managed after
 their invocation.</dd>
 <dt><a href="#init-connection-workitem"><strong>Initial / Common
-Connection Description</strong></a> (<a href=
-"#thing-description-deliverable">Thing Description</a>, <a href=
-"#binding-deliverable">Binding Templates</a>):</dt>
+Connection Description</strong></a> 
+(Thing Description, Binding Templates):</dt>
 <dd>Add support for a connection description to be shared among
 affordance operations</dd>
 <dt><a href="#canon-workitem"><strong>Canonicalization</strong></a>
-(<a href="#thing-description-deliverable">Thing Description</a>,
-<a href="#discovery-deliverable">Discovery</a>):</dt>
+(Thing Description, Discovery):</dt>
 <dd>Add a canonicalization algorithm.</dd>
 <dt><a href="#inline-sec-workitem"><strong>Inline
-Security</strong></a> (<a href=
-"#thing-description-deliverable">Thing Description</a>):</dt>
+Security</strong></a> 
+(Thing Description):</dt>
 <dd>Add a way to describe security definitions in a simplified
 fashion for simple cases.</dd>
 <dt><a href="#td-versioning-workitem"><strong>TD
-Versioning</strong></a> (<a href=
-"#thing-description-deliverable">Thing Description</a>, <a href=
-"#discovery-deliverable">Discovery</a>):</dt>
+Versioning</strong></a> 
+(Thing Description, Discovery):</dt>
 <dd>Explain the semantics on how to version Thing
 Descriptions.</dd>
 <dt><a href="#td-consumption-workitem"><strong>Normative TD
-Parsing, Consuming and Validation</strong></a> (<a href=
-"#thing-description-deliverable">Thing Description</a>, <a href=
-"#scripting-deliverable">Scripting API</a>, <a href=
-"#profiles-deliverable">Profiles</a>):</dt>
+Parsing, Consuming and Validation</strong></a> 
+(Thing Description, Scripting API, Profiles):</dt>
 <dd>Define normative algorithms for parsing, consuming and
 validating Thing Descriptions.</dd>
 <dt><a href="#td-linting-workitem"><strong>Linting mechanism for
-TDs</strong></a> (<a href="#thing-description-deliverable">Thing
-Description</a>, <a href=
-"#profiles-deliverable">Profiles</a>):</dt>
+TDs</strong></a> 
+(Thing Description, Profiles):</dt>
 <dd>Define a linting mechanism for Thing Descriptions that allows
 adding additional rules.</dd>
 <dt><a href="#binding-mechanism-workitem"><strong>Binding
-Mechanism</strong></a> (<a href="#binding:-deliverable">Binding
-Templates</a>, <a href="#thing-description-deliverable">Thing
-Description</a>, <a href="#security-deliverable">Security</a>,
-<a href="#profiles-deliverable">Profiles</a>):</dt>
+Mechanism</strong></a> 
+(Binding Templates, Thing Description, Security, Profiles):</dt>
 <dd>Add normative binding mechanism</dd>
 <dt><a href="#http-binding-workitem"><strong>HTTP Protocol
-Binding</strong></a> (<a href="#binding:-deliverable">Binding
-Templates</a>):</dt>
+Binding</strong></a> 
+(Binding Templates):</dt>
 <dd>Add normative HTTP binding</dd>
 <dt><a href="#coap-binding-workitem"><strong>CoAP Protocol
-Binding</strong></a> (<a href="#binding:-deliverable">Binding
-Templates</a>):</dt>
+Binding</strong></a> 
+(Binding Templates):</dt>
 <dd>Add normative CoAP binding</dd>
 <dt><a href="#mqtt-binding-workitem"><strong>MQTT Protocol
-Binding</strong></a> (<a href="#binding:-deliverable">Binding
-Templates</a>):</dt>
+Binding</strong></a> 
+(Binding Templates):</dt>
 <dd>Add normative MQTT binding</dd>
 <dt><a href="#modbus-binding-workitem"><strong>Modbus Protocol
-Binding</strong></a> (<a href="#binding:-deliverable">Binding
-Templates</a>):</dt>
+Binding</strong></a> 
+(Binding Templates):</dt>
 <dd>Add normative Modbus binding</dd>
 <dt><a href="#bacnet-binding-workitem"><strong>BACnet Protocol
-Binding</strong></a> (<a href="#binding:-deliverable">Binding
-Templates</a>):</dt>
+Binding</strong></a> 
+(Binding Templates):</dt>
 <dd>Add normative BACnet binding</dd>
 <dt><a href="#opcua-binding-workitem"><strong>OPC UA Protocol
-Binding</strong></a> (<a href="#binding:-deliverable">Binding
-Templates</a>):</dt>
+Binding</strong></a> 
+(Binding Templates):</dt>
 <dd>Add normative OPC UA binding</dd>
 <dt><a href="#grpc-binding-workitem"><strong>gRPC Protocol
-Binding</strong></a> (<a href="#binding:-deliverable">Binding
-Templates</a>):</dt>
+Binding</strong></a> 
+(Binding Templates):</dt>
 <dd>Add normative gRPC binding</dd>
 <dt><a href="#json-binding-workitem"><strong>JSON Payload
-Binding</strong></a> (<a href="#binding:-deliverable">Binding
-Templates</a>):</dt>
+Binding</strong></a> 
+(Binding Templates):</dt>
 <dd>Add normative JSON binding</dd>
 <dt><a href="#cbor-binding-workitem"><strong>CBOR Payload
-Binding</strong></a> (<a href="#binding:-deliverable">Binding
-Templates</a>):</dt>
+Binding</strong></a> 
+(Binding Templates):</dt>
 <dd>Add normative CBOR binding</dd>
 <dt><a href="#xml-binding-workitem"><strong>XML Payload
-Binding</strong></a> (<a href="#binding:-deliverable">Binding
-Templates</a>):</dt>
+Binding</strong></a> 
+(Binding Templates):</dt>
 <dd>Add normative XML binding</dd>
 <dt><a href="#cloudevents-binding-workitem"><strong>CloudEvents
-Payload Binding</strong></a> (<a href=
-"#binding:-deliverable">Binding Templates</a>):</dt>
+Payload Binding</strong></a> 
+(Binding Templates):</dt>
 <dd>Add normative CloudEvents binding</dd>
 <dt><a href="#echonet-binding-workitem"><strong>ECHONET Lite Web
-API Combination Binding</strong></a> (<a href=
-"#binding:-deliverable">Binding Templates</a>):</dt>
+API Combination Binding</strong></a> 
+(Binding Templates):</dt>
 <dd>Add normative ECHONET Lite Web API binding</dd>
 <dt><a href="#wotcg-coordination"><strong>WoT CG
 Coordination</strong></a>:</dt>
@@ -176,8 +160,7 @@ Coordination</strong></a>:</dt>
 adoption and implementation, as well as collect feedback from the
 wider community.</dd>
 <dt><a href="#profiles-workitem"><strong>Interoperability
-Profiles</strong></a> (<a href=
-"#profiles-deliverable">Profiles</a>):</dt>
+Profiles</strong></a> (Profiles):</dt>
 <dd>Support out-of-the-box interoperabilty via a profiling
 mechanism.</dd>
 </dl>
