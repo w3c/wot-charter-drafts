@@ -206,15 +206,28 @@
         <p style="text-align:left;font-style:italic">Scope Summary</p>
         After each work item, in parenthesis, we identify the deliverables it may be included in.
         <dl>
-          <dt><strong>Discovery Updates</strong>
-            (<a href="#discovery-deliverable">Discovery</a>):</dt>
-          <dd>Updates to the Discovery specification to support
-            additional introduction mechanisms,
-            improve query mechanisms in directories,
-            align with scripting APIs,
-            support all Thing Description versions (1.0, 1.1, and 2.0) and Thing Models,
-            better support CoAP,
-            and improve security and validation.
+          <dt><strong>Support WoT Integration</strong>
+            (<a href="#thing-description-deliverable">Thing Description</a>,
+            <a href="#profiles-deliverable">Profiles</a>,
+            <a href="#binding-deliverable">Binding Templates</a>):</dt>
+          <dd>The WG will improve the usability of WoT in other ecosystems and communities. Thus, the WG will define core binding and profiling mechanisms and specify additional protocol and payload bindings, and profiles together with reusable, external security vocabularies.
+          </dd>
+          <dt>
+            <strong>Improve Management of TDs</strong>
+            (<a href="#thing-description-deliverable">Thing Description</a>,
+            <a href="#discovery-deliverable">Discovery</a>):
+          </dt>
+          <dd>
+            The Thing Descriptions require additional mechanisms around them for their management.
+            The working group will update the Discovery specification with additional features, add mechanism to sign TDs, how to manage versions of TDs and how to parse, validate, consume and lint TDs.
+          </dd>
+          <dt>
+            <strong>Increase descriptiveness of TDs</strong>
+            (<a href="#thing-description-deliverable">Thing Description</a>,
+            <a href="#binding-deliverable">Binding Templates</a>):
+          </dt>
+          <dd>
+            The WG will work on increasing the descriptive power of TDs to allow using them in more use cases. This includes supporting historical values (timeseries), repeating payloads and connections, and manageable actions.
           </dd>
           <dt><strong>Geolocation</strong>
             (<a href="#discovery-deliverable">Discovery</a>,
@@ -227,77 +240,8 @@
            (<a href="#architecture-deliverable">Architecture</a>,
             <a href="#discovery-deliverable">Discovery</a>):</dt>
            <dd>Define lifecycle process to establish mutual trust and identification.</dd>
-	        <dt><strong>Security Scheme Reorganization</strong>
-           (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#binding-deliverable">Binding Templates</a>):</dt>
-           <dd>Refactor security schemes to use Protocol Binding ontologies for protocol-specific security schemes while also 
-            enabling simpler and inline security declarations
-           </dd>
-          <dt>
-            <strong>Canonicalization and Signing</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#discovery-deliverable">Discovery</a>,
-            <a href="#profiles-deliverable">Profiles</a>):
-          </dt>
-          <dd>
-            Add canonicalization and signing algorithms to support signed Thing Descriptions in the Discovery process.
-          </dd>
-          <dt><strong>Timeseries</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#binding-deliverable">Binding Templates</a>):
-          </dt>
-          <dd>
-            Add support for describing historical values or value changes of affordances to the TD specification in an
-            interoperable way with existing solutions.
-          </dd>
-          <dt>
-            <strong>Connection and Payload Reuse Improvements</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#binding-deliverable">Binding Templates</a>,
-            <a href="#profiles-deliverable">Profiles</a>):
-          </dt>
-          <dd>
-            Add support for describing cases where a connection and subsequent payloads are same or similar.
-          </dd>
-          <dt>
-            <strong>Manageable Actions</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#profiles-deliverable">Profiles</a>):
-          </dt>
-          <dd>
-            Add support for describing actions that can be managed after their invocation.
-          </dd>
-          <dt>
-            <strong>TD Versioning</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#discovery-deliverable">Discovery</a>):
-          </dt>
-          <dd>
-            Explain the semantics on how to version Thing Descriptions.
-          </dd>
-          <dt>
-            <strong>Normative Linting, Parsing, Consuming and Validation mechanism for TDs</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#scripting-deliverable">Scripting API</a>,
-            <a href="#profiles-deliverable">Profiles</a>):
-          </dt>
-          <dd>
-            Define a linting mechanism for Thing Descriptions that allows adding additional rules and normative mechanism for
-            parsing, consuming and validation of TDs for Consumers.
-          </dd>
-          <dt><strong>Binding Mechanism</strong>
-            (<a href="#binding:-deliverable">Binding Templates</a>,
-              <a href="#thing-description-deliverable">Thing Description</a>,
-              <a href="#security-deliverable">Security</a>,
-              <a href="#profiles-deliverable">Profiles</a>):</dt>
-            <dd>Add normative binding mechanism</dd>
-          <dt><strong>Protocol and Payload Bindings</strong>
-            (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-          <dd>Define bindings for specific protocols and payloads of interest while focusing to support ecosystems.</dd>
-          <dt><strong>Interoperability Profiles</strong>
-            (<a href="#profiles-deliverable">Profiles</a>):</dt>
-          <dd>Support out-of-the-box interoperabilty via a profiling mechanism.</dd>
         </dl>
+
       </div>
 
       <section id="section-out-of-scope">
