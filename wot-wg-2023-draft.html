@@ -177,6 +177,7 @@
     </div>
 
     <div id="background" class="background">
+      <h2>Motivation and Background</h2>
       <!-- Brief background of landscape, technology, and relationship to the Web, users, developers, implementers, and industry. -->
       <p>As a continuation of the work in <a href="https://www.w3.org/2022/07/wot-wg-2022.html">the previous charter</a>, 
         this working group is tasked with the standardization or extension of the building blocks
@@ -184,17 +185,18 @@
         Things Interest Group</a> (IG) as being important to advance the Web of Things.
         The WoT building blocks are intended to complement and integrate to existing and emerging IoT standards using Web technologies. 
         As a result, the building blocks focus on enabling cross-platform and cross-domain interoperability in the IoT.
+<!--
         The proposed work items are summarized in the <a href="#scope">Scope</a> section, and
         include <span class="todo">(KEEP in Sync) interoperability profiles for out-of-the-box interoperability;
           protocol and payload bindings for ecosystem support; improving the descriptive power of Thing Descriptions for 
           further use cases and improvements to the discovery mechanism;
           </span>
-          <!-- Is the linked document useful? It seems old. -->
         <span class="todo">These work items will be prototyped and tested by multiple implementors in
         WoT IG <a href="https://w3c.github.io/wot/current-practices/wot-practices.html#plugfests">PlugFests</a>
         during development.
         Open-source implementations will be prioritized.
         </span>
+-->
       </p>
     </div>
 
@@ -202,11 +204,21 @@
       <h2>Scope</h2>
       <!-- What exactly is in scope, and out of scope.
           For legal review. Be brief. -->
-      <p>The Working Group has the following work items in scope:</p>
+      <p>During this charter, the Working Group would:</p>
+      <ul>
+      <li>Update the Architecture, Thing Description, Profile, and Discovery specifications
+      to address major issues discovered during implementation of the 1.0 and 1.1 specifications.
+      Unlike the last charter, these would not be limited to backward-compatible updates.</li> 
+      <li>Reorganize Security Schemes and Protocol/Payload Bindings to be more modular and less specific
+      to HTTP.</li>
+      <li>Update and improve security and privacy controls.</li>
+      <li>Address the functional requirements of new use cases, such as Digital Twins.</li>
+      </ul>
 
-      <div class="summary">
-        <p style="text-align:left;font-style:italic">Scope Summary</p>
-        After each work item, in parenthesis, we identify the deliverables it may be included in.
+      <p>Specific work items are listed below, with links to the deliverables they
+      would affect.
+      After each work item, in parenthesis, we identify the deliverables it may be included in.
+      </p>
         <dl>
           <dt><strong>Discovery Updates</strong>
             (<a href="#discovery-deliverable">Discovery</a>):</dt>
@@ -220,28 +232,30 @@
           </dd>
           <dt><strong>Geolocation</strong>
             (<a href="#discovery-deliverable">Discovery</a>,
-            <a href="#thing-description-deliverable">Thing Description</a>,
+             <a href="#thing-description-deliverable">Thing Description</a>,
+             <a href="#profiles-deliverable">Profiles</a>):</dt>
+            <dd>Define mechanisms for embedding of static geolocation information in TDs, 
+                annotation of data models for dynamic geolocation, and spatial filters in
+                TD Directory queries for geospatially-limited discovery.</dd>
+          <dt><strong>Onboarding</strong>
+           (<a href="#architecture-deliverable">Architecture</a>,
+            <a href="#discovery-deliverable">Discovery</a>):</dt>
+           <dd>Define lifecycle process to establish mutual trust and identification.</dd>
+	        <dt><strong>Security Scheme Reorganization</strong>
+           (<a href="#thing-description-deliverable">Thing Description</a>,
+            <a href="#binding-deliverable">Binding Templates</a>):</dt>
+           <dd>Refactor security schemes to use Protocol Binding ontologies for protocol-specific security schemes while also 
+            enabling simpler and inline security declarations
+           </dd>
+          <dt>
+            <strong>Canonicalization and Signing</strong>
+            (<a href="#thing-description-deliverable">Thing Description</a>,
+            <a href="#discovery-deliverable">Discovery</a>,
             <a href="#profiles-deliverable">Profiles</a>):
           </dt>
-          <dd>Define mechanisms for embedding of static geolocation information in TDs,
-            annotation of data models for dynamic geolocation, and spatial filters in
-            TD Directory queries for geospatially-limited discovery.</dd>
-          <dt><strong>Onboarding</strong>
-            (<a href="#architecture-deliverable">Architecture</a>,
-            <a href="#discovery-deliverable">Discovery</a>):
-          </dt>
-          <dd>Define lifecycle process to establish mutual trust and identification.</dd>
-          <dt><strong>Security Scheme Ontology</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#binding-deliverable">Binding Templates</a>):
-          </dt>
-          <dd>Refactor security schemes to use Protocol Binding ontologies for protocol-specific security schemes.</dd>
-          <dt><strong>Signing</strong>
-            (<a href="#discovery-deliverable">Discovery</a>,
-            <a href="#thing-description-deliverable">Thing Description</a>):
-          </dt>
-          <dd>Add support for Thing Description signing and support signed Thing Descriptions in the Discovery process.
-            Requires definition of Thing Description canonicalization.</dd>
+          <dd>
+            Add canonicalization and signing algorithms to support signed Thing Descriptions in the Discovery process.
+          </dd>
           <dt><strong>Timeseries</strong>
             (<a href="#thing-description-deliverable">Thing Description</a>,
             <a href="#binding-deliverable">Binding Templates</a>):
@@ -251,14 +265,13 @@
             interoperable way with existing solutions.
           </dd>
           <dt>
-            <strong>Payload Driven Protocols</strong>
+            <strong>Connection and Payload Reuse Improvements</strong>
             (<a href="#thing-description-deliverable">Thing Description</a>,
             <a href="#binding-deliverable">Binding Templates</a>,
             <a href="#profiles-deliverable">Profiles</a>):
           </dt>
           <dd>
-            Add support for describing protocols that depend on specific payload structures on top of the protocol
-            bindings.
+            Add support for describing cases where a connection and subsequent payloads are same or similar.
           </dd>
           <dt>
             <strong>Manageable Actions</strong>
@@ -269,29 +282,6 @@
             Add support for describing actions that can be managed after their invocation.
           </dd>
           <dt>
-            <strong>Initial / Common Connection Description</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#binding-deliverable">Binding Templates</a>):
-          </dt>
-          <dd>
-            Add support for a connection description to be shared among affordance operations
-          </dd>
-          <dt>
-            <strong>Canonicalization</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#discovery-deliverable">Discovery</a>):
-          </dt>
-          <dd>
-            Add a canonicalization algorithm.
-          </dd>
-          <dt>
-            <strong>Inline Security</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>):
-          </dt>
-          <dd>
-            Add a way to describe security definitions in a simplified fashion for simple cases.
-          </dd>
-          <dt>
             <strong>TD Versioning</strong>
             (<a href="#thing-description-deliverable">Thing Description</a>,
             <a href="#discovery-deliverable">Discovery</a>):
@@ -300,39 +290,32 @@
             Explain the semantics on how to version Thing Descriptions.
           </dd>
           <dt>
-            <strong>Normative TD Parsing, Consuming and Validation</strong>
+            <strong>Normative Linting, Parsing, Consuming and Validation mechanism for TDs</strong>
             (<a href="#thing-description-deliverable">Thing Description</a>,
             <a href="#scripting-deliverable">Scripting API</a>,
             <a href="#profiles-deliverable">Profiles</a>):
           </dt>
           <dd>
-            Define normative algorithms for parsing, consuming and validating Thing Descriptions.
-          </dd>
-          <dt>
-            <strong>Linting mechanism for TDs</strong>
-            (<a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#profiles-deliverable">Profiles</a>):
-          </dt>
-          <dd>
-            Define a linting mechanism for Thing Descriptions that allows adding additional rules.
+            Define a linting mechanism for Thing Descriptions that allows adding additional rules and normative mechanism for
+            parsing, consuming and validation of TDs for Consumers.
           </dd>
           <dt><strong>Binding Mechanism</strong>
             (<a href="#binding:-deliverable">Binding Templates</a>,
-            <a href="#thing-description-deliverable">Thing Description</a>,
-            <a href="#security-deliverable">Security</a>,
-            <a href="#profiles-deliverable">Profiles</a>):
-          </dt>
-          <dd>Add normative binding mechanism</dd>
-          <dt><strong>Protocol Bindings</strong>
+              <a href="#thing-description-deliverable">Thing Description</a>,
+              <a href="#security-deliverable">Security</a>,
+              <a href="#profiles-deliverable">Profiles</a>):</dt>
+            <dd>Add normative binding mechanism</dd>
+          <dt><strong>Protocol and Payload Bindings</strong>
             (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-          <dd>Define bindings for specific protocols of interest.</dd>
-          <dt><strong>Payload Bindings</strong>
-            (<a href="#binding:-deliverable">Binding Templates</a>):</dt>
-          <dd>Define bindings for payload formats of interest.</dd>
+          <dd>Define bindings for specific protocols and payloads of interest while focusing to support ecosystems.</dd>
           <dt><strong>Interoperability Profiles</strong>
             (<a href="#profiles-deliverable">Profiles</a>):</dt>
           <dd>Support out-of-the-box interoperabilty via a profiling mechanism.</dd>
         </dl>
+
+        Details for planned work items are available in a 
+        <a href="https://w3c.github.io/wot-charter-drafts/wot-wg-2023-details.html">separate document</a>.
+
       </div>
 
       <section id="section-out-of-scope">
@@ -504,44 +487,46 @@
           <!--
             <dt><a href="https://w3c.github.io/charter-drafts/charter-template.html"><i class="todo">[other name]</i> Working Group</a></dt>
               <dd><i class="todo">[specific nature of liaison]</i></dd>
--->
-          <dt><a href="https://www.w3.org/community/wot/">Web of Things Community Group</a></dt>
-          <dd>For collaboration on community outreach of the WG reports to increase adoption and implementation,
-            as well as collecting feedback from the global community.
-            Meetings held in English.
-          </dd>
-          <dt><a href="https://www.w3.org/community/wot-jp/">Web of Things Japanese Community Group</a></dt>
-          <dd>For collaboration on community outreach of the WG reports to increase adoption and implementation,
-            as well as collecting feedback from the Japanese community.
-            Meetings held in Japanese.
-          </dd>
-          <dt><a href="https://www.w3.org/groups/ig/wot">Web of Things Interest Group</a></dt>
-          <dd>For collaboration as outlined in <a href="#scope">Scope</a>.</dd>
-          <dt><a href="https://www.w3.org/2018/json-ld-wg/">JSON-LD Working Group</a></dt>
-          <dd>For collaboration on JSON-LD features and WoT use cases.</dd>
-          <dt><a href="https://www.w3.org/community/exi-next/">Efficient Extensible Interchange Community Group</a></dt>
-          <dd>In relation to efficient interchange for Thing Descriptions.</dd>
-          <dt><a href="https://www.w3.org/auto/">Web and Automotive Business &amp; Working Groups</a></dt>
-          <dd>For collaboration on technologies and requirements relating to connected cars and the Web of Things.</dd>
-          <dt><a href="https://www.w3.org/2009/dap/">Device and Sensors Working Group</a></dt>
-          <dd>For coordination on APIs for sensors and actuators.</dd>
-          <dt><a href="">Decentralized Identifier Working Group</a></dt>
-          <dd>For coordination on identity management and information lifecycle.</dd>
-          <dt><a href="https://www.w3.org/web-networks/">Web &amp; Networks Interest Group</a></dt>
-          <dd>For collaboration on networking and computing technologies on the edge and in the
-            cloud when exposing interactions between Things.</dd>
-          <dt><a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a></dt>
-          <dd>For coordination on impact of WoT technologies on accessibility for users with disabilities,
-            and to support new capabilities that help leverage WoT connectivity and sensor networks
-            for disability support in public and private spaces.</dd>
-          <dt><a href="https://www.w3.org/Privacy/">Privacy Interest Group</a></dt>
-          <dd>In addition to horizontal review, during development of deliverables such
-            as discovery and information lifecycle that
-            require the development of a privacy-preserving architecture,
-            close technical collaboration with the Privacy Interest Group will be needed.</dd>
-          <dt><a href="https://www.w3.org/community/iotschema/">Schema Extensions for IoT Community Group</a></dt>
-          <dd>For collaboration on extensions to Schema.org for IoT use cases.</dd>
-        </dl>
+          -->
+            <dt><a href="https://www.w3.org/community/wot/">Web of Things Community Group</a></dt>
+              <dd>For collaboration on community outreach of the WG reports to increase adoption and implementation, 
+		  as well as collecting feedback from the global community. 
+		  Meetings held in English.
+		  </dd>	
+            <dt><a href="https://www.w3.org/community/wot-jp/">Web of Things Japanese Community Group</a></dt>
+              <dd>For collaboration on community outreach of the WG reports to increase adoption and implementation, 
+		  as well as collecting feedback from the Japanese community. 
+		  Meetings held in Japanese.
+		  </dd>	
+            <dt><a href="https://www.w3.org/groups/ig/wot">Web of Things Interest Group</a></dt>
+	      <dd>For collaboration as outlined in <a href="#scope">Scope</a>.</dd>
+	    <dt><a href="https://www.w3.org/2018/json-ld-wg/">JSON-LD Working Group</a></dt>
+	      <dd>For collaboration on JSON-LD features and WoT use cases.</dd>
+	    <dt><a href="https://www.w3.org/community/exi-next/">Efficient Extensible Interchange Community Group</a></dt>
+	      <dd>In relation to efficient interchange for Thing Descriptions.</dd>
+	    <dt><a href="https://www.w3.org/auto/">Web and Automotive Business &amp; Working Groups</a></dt>
+	      <dd>For collaboration on technologies and requirements relating to connected cars and the Web of Things.</dd>
+	    <dt><a href="https://www.w3.org/2009/dap/">Device and Sensors Working Group</a></dt>
+	      <dd>For coordination on APIs for sensors and actuators.</dd>
+	    <dt><a href="">Decentralized Identifier Working Group</a></dt>
+	      <dd>For coordination on identity management and information lifecycle.</dd>
+	    <dt><a href="https://www.w3.org/web-networks/">Web &amp; Networks Interest Group</a></dt>
+	      <dd>For collaboration on networking and computing technologies on the edge and in the 
+		  cloud when exposing interactions between Things.</dd>
+	    <dt><a href="https://www.w3.org/web-networks/">Spatial Data on the Web Working Group</a></dt>
+	      <dd>For collaboration on geolocation, in conjunction with the Open Geospatial Consortium.</dd>
+	    <dt><a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a></dt>
+	      <dd>In addition to horizontal review, coordination on impact of WoT technologies on accessibility,
+		  and support for new capabilities that help leverage WoT connectivity and sensor networks
+		  for accessibility support in public and private spaces is needed.</dd>
+	    <dt><a href="https://www.w3.org/Privacy/">Privacy Interest Group</a></dt>
+	      <dd>In addition to horizontal review, during development of deliverables such
+                  as discovery and information lifecycle that
+                  require the development of a privacy-preserving architecture,
+                  close technical collaboration with the Privacy Interest Group will be needed.</dd>
+	    <dt><a href="https://www.w3.org/community/iotschema/">Schema Extensions for IoT Community Group</a></dt>
+	       <dd>For collaboration on extensions to Schema.org for IoT use cases.</dd>
+          </dl>
 
         <!--
           <p class="issue"><b>Note:</b> Do not list horizontal groups here, only specific WGs relevant to your work.</p>
