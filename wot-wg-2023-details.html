@@ -14,13 +14,6 @@
       <h2>Consolidated Work Items</h2>
       <dl>
         <dt>
-          <strong>Canonicalization and Signing</strong> (<a href="#thing-description-deliverable">Thing
-          Description</a>, <a href="#discovery-deliverable">Discovery</a>, <a href=
-          "#profiles-deliverable">Profiles</a>):
-        </dt>
-        <dd>Add canonicalization and signing algorithms to support signed Thing Descriptions in the Discovery
-        process.</dd>
-        <dt>
           <strong>Connection and Payload Reuse Improvements</strong> (<a href="#thing-description-deliverable">Thing
           Description</a>, <a href="#binding-deliverable">Binding Templates</a>, <a href=
           "#profiles-deliverable">Profiles</a>):
@@ -98,6 +91,25 @@
           </dl>
         </dd>
         <dt>
+          <strong>Canonicalization and Signing</strong> (<a href="#thing-description-deliverable">Thing
+          Description</a>, <a href="#discovery-deliverable">Discovery</a>, <a href=
+          "#profiles-deliverable">Profiles</a>):
+        </dt>
+        <dd>
+          Add canonicalization and signing algorithms to support signed Thing Descriptions in the Discovery process.
+          <dl>
+            <dt>
+              <a href="#signing-workitem"><strong>Signing</strong></a> (Discovery, Thing Description):
+            </dt>
+            <dd>Add support for Thing Description signing and support signed Thing Descriptions in the Discovery
+            process. Requires definition of Thing Description canonicalization.</dd>
+            <dt>
+              <a href="#canon-workitem"><strong>Canonicalization</strong></a> (Thing Description, Discovery):
+            </dt>
+            <dd>Define a Thing Description canonicalization algorithm.</dd>
+          </dl>
+        </dd>
+        <dt>
           <a href="#geolocation-workitem"><strong>Geolocation</strong></a> (Discovery, Thing Description, Profiles):
         </dt>
         <dd>Define mechanisms for embedding of static geolocation information in TDs, annotation of data models for
@@ -106,11 +118,6 @@
           <a href="#onboarding-workitem"><strong>Onboarding</strong></a> (Architecture, Discovery):
         </dt>
         <dd>Define lifecycle process to establish mutual trust and identification.</dd>
-        <dt>
-          <a href="#signing-workitem"><strong>Signing</strong></a> (Discovery, Thing Description):
-        </dt>
-        <dd>Add support for Thing Description signing and support signed Thing Descriptions in the Discovery process.
-        Requires definition of Thing Description canonicalization.</dd>
         <dt>
           <a href="#timeseries-workitem"><strong>Timeseries</strong></a> (Thing Description, Binding Templates):
         </dt>
@@ -131,10 +138,6 @@
           Description, Binding Templates):
         </dt>
         <dd>Add support for a connection description to be shared among affordance operations</dd>
-        <dt>
-          <a href="#canon-workitem"><strong>Canonicalization</strong></a> (Thing Description, Discovery):
-        </dt>
-        <dd>Add a canonicalization algorithm.</dd>
         <dt>
           <a href="#td-versioning-workitem"><strong>TD Versioning</strong></a> (Thing Description, Discovery):
         </dt>
