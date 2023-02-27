@@ -176,6 +176,7 @@
     </div>
 
     <div id="background" class="background">
+      <h2>Motivation and Background</h2>
       <!-- Brief background of landscape, technology, and relationship to the Web, users, developers, implementers, and industry. -->
       <p>This working group is tasked with the standardization
         or extension of several technological building blocks
@@ -184,6 +185,7 @@
         as being important to advancing the Web of Things.
         The WoT building blocks are intended to complement existing
         and emerging IoT standards by focusing on enabling cross-platform and cross-domain interoperability.
+<!--
         The proposed work items are summarized in the <a href="#scope">Scope</a> section, and
         include <span class="todo">(REVISE) interoperability profiles for particular usage contexts;
           vocabulary support for new protocols, security schemes, and links;
@@ -193,6 +195,7 @@
         WoT IG <a href="https://w3c.github.io/wot/current-practices/wot-practices.html#plugfests">PlugFests</a>
         during development.
         Open-source implementations will be prioritized.
+-->
       </p>
     </div>
 
@@ -200,11 +203,21 @@
       <h2>Scope</h2>
       <!-- What exactly is in scope, and out of scope.
           For legal review. Be brief. -->
-      <p>The Working Group has the following work items in scope:</p>
+      <p>During this charter, the Working Group would:</p>
+      <ul>
+      <li>Update the Architecture, Thing Description, Profile, and Discovery specifications
+      to address major issues discovered during implementation of the 1.0 and 1.1 specifications.
+      Unlike the last charter, these would not be limited to backward-compatible updates.</li> 
+      <li>Reorganize Security Schemes and Protocol/Payload Bindings to be more modular and less specific
+      to HTTP.</li>
+      <li>Update and improve security and privacy controls.</li>
+      <li>Address the functional requirements of new use cases, such as Digital Twins.</li>
+      </ul>
 
-      <div class="summary">
-        <p style="text-align:left;font-style:italic">Scope Summary</p>
-        After each work item, in parenthesis, we identify the deliverables it may be included in.
+      <p>Specific work items are listed below, with links to the deliverables they
+      would affect.
+      After each work item, in parenthesis, we identify the deliverables it may be included in.
+      </p>
         <dl>
           <dt><strong>Support WoT Integration</strong>
             (<a href="#thing-description-deliverable">Thing Description</a>,
@@ -241,6 +254,9 @@
             <a href="#discovery-deliverable">Discovery</a>):</dt>
            <dd>Define lifecycle process to establish mutual trust and identification.</dd>
         </dl>
+
+        Details for planned work items are available in a 
+        <a href="https://w3c.github.io/wot-charter-drafts/wot-wg-2023-details.html">separate document</a>.
 
       </div>
 
@@ -442,9 +458,9 @@
 	    <dt><a href="https://www.w3.org/web-networks/">Spatial Data on the Web Working Group</a></dt>
 	      <dd>For collaboration on geolocation, in conjunction with the Open Geospatial Consortium.</dd>
 	    <dt><a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a></dt>
-	      <dd>For coordination on impact of WoT technologies on accessibility for users with disabilities,
-		  and to support new capabilities that help leverage WoT connectivity and sensor networks
-		  for disability support in public and private spaces.</dd>
+	      <dd>In addition to horizontal review, coordination on impact of WoT technologies on accessibility,
+		  and support for new capabilities that help leverage WoT connectivity and sensor networks
+		  for accessibility support in public and private spaces is needed.</dd>
 	    <dt><a href="https://www.w3.org/Privacy/">Privacy Interest Group</a></dt>
 	      <dd>In addition to horizontal review, during development of deliverables such
                   as discovery and information lifecycle that
