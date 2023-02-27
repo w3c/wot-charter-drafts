@@ -208,7 +208,7 @@
       <p>During this charter, the Working Group would:</p>
       <ul>
       <li>Update the Architecture, Thing Description, Profile, and Discovery specifications
-      to address major issues discovered during implementation of the 1.0 and 1.1 specifications.
+      to add new features and address issues discovered during implementation of the 1.0 and 1.1 specifications.
       Unlike the last charter, these would not be limited to backward-compatible updates.</li> 
       <li>Reorganize Security Schemes and Protocol/Payload Bindings to be more modular and less specific
       to HTTP.</li>
@@ -221,11 +221,12 @@
       After each work item, in parenthesis, we identify the deliverables it may be included in.
       </p>
         <dl>
-          <dt><strong>Support WoT Integration</strong>
+          <dt><strong>Support WoT Interoperability</strong>
             (<a href="#thing-description-deliverable">Thing Description</a>,
             <a href="#profiles-deliverable">Profiles</a>,
             <a href="#binding-deliverable">Binding Templates</a>):</dt>
-          <dd>The WG will improve the usability of WoT in other ecosystems and communities. Thus, the WG will define core binding and profiling mechanisms and specify additional protocol and payload bindings, and profiles together with reusable, external security vocabularies.
+          <dd>The WG will improve out-of-the-box interoperability and enable the integration of WoT into other ecosystems and communities. 
+            Thus, the WG will define core binding and profiling mechanisms, specify additional protocol and payload bindings, and define appropriate profiles.
           </dd>
           <dt>
             <strong>Improve Management of TDs</strong>
@@ -233,8 +234,10 @@
             <a href="#discovery-deliverable">Discovery</a>):
           </dt>
           <dd>
-            The Thing Descriptions require additional mechanisms around them for their management.
-            The working group will update the Discovery specification with additional features, add mechanism to sign TDs, how to manage versions of TDs and how to parse, validate, consume and lint TDs.
+            Additional mechanisms around for the management of Thing Descriptions are needed to improve workflows that use them. 
+            For example, the working group will update the Discovery specification with additional features, including geolocation. 
+            In other specifications, the WG intends to add a mechanism to sign TDs, define how to manage versions of TDs and define how to
+             parse, validate, consume and lint TDs.
           </dd>
           <dt>
             <strong>Increase descriptiveness of TDs</strong>
@@ -242,19 +245,18 @@
             <a href="#binding-deliverable">Binding Templates</a>):
           </dt>
           <dd>
-            The WG will work on increasing the descriptive power of TDs to allow using them in more use cases. This includes supporting historical values (timeseries), repeating payloads and connections, and manageable actions.
+            The WG will work on increasing the descriptive power of TDs to allow using them in more use cases. This includes
+            describing dynamic resources, reusable connections, historical values (timeseries), repeating payloads, both static and dynamic
+            geolocation information, manageable actions and more precise definitions of data schemas for each type of operation.
           </dd>
-          <dt><strong>Geolocation</strong>
-            (<a href="#discovery-deliverable">Discovery</a>,
-             <a href="#thing-description-deliverable">Thing Description</a>,
-             <a href="#profiles-deliverable">Profiles</a>):</dt>
-            <dd>Define mechanisms for embedding of static geolocation information in TDs, 
-                annotation of data models for dynamic geolocation, and spatial filters in
-                TD Directory queries for geospatially-limited discovery.</dd>
-          <dt><strong>Onboarding</strong>
-           (<a href="#architecture-deliverable">Architecture</a>,
+          <dt><strong>Improve security and privacy</strong>
+           (<a href="#thing-description-deliverable">Thing Description</a>
             <a href="#discovery-deliverable">Discovery</a>):</dt>
-           <dd>Define lifecycle process to establish mutual trust and identification.</dd>
+           <dd>Define reusable, external security vocabularies, simplify the use of security schemes, and define and onboarding
+          lifecycle process to establish mutual trust and identification, and other work as appropriate.</dd>
+          <dt><strong>New Use cases</strong>:
+          </dt>
+          <dd>Address the functional requirements of new use cases, such as Digital Twins.</dd>
         </dl>
 
       <p>
