@@ -81,19 +81,21 @@
     <!-- delete PROPOSED after AC review completed -->
 
     <p class="mission">
-      The <strong>mission</strong> of the
-      <a href="https://www.w3.org/groups/wg/wot">Web of Things Working Group</a>
-      is to counter the fragmentation of the IoT through
-      the specification of building blocks
-      that enable easy integration of IoT devices and services
-      across IoT platforms and application domains.
-      These building blocks should complement and enhance existing standards.
-      This
-      Working Group Charter
-      covers those aspects that the
-      <a href="http://www.w3.org/groups/ig/wot">Web of Things Interest Group</a>
-      <a href="https://www.w3.org/2021/12/wot-ig-2021.html">(charter here)</a>
-      believes are mature enough to progress to W3C Recommendations.
+      <!-- counter the fragmentation needs to be changed but not sure what to use -->
+      The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/wot">Web of Things Working Group</a>
+      is to counter the fragmentation of the IoT through the specification of building blocks
+      that enable easy integration of IoT devices and services across IoT platforms and application domains.
+      These building blocks should complement and enhance the use of existing standards, and allow WoT to
+      be used within other ecosystems and communities.
+      This reduces the initial friction for adoption and supports further industry adoption.
+      <span class="todo">This Working Group Charter covers those aspects that the
+        <a href="http://www.w3.org/groups/ig/wot">Web of Things Interest Group</a>
+        <a href="https://www.w3.org/2021/12/wot-ig-2021.html">(charter here)</a>
+        believes are mature enough to progress to W3C Recommendations.
+      </span>
+      <!-- This is not true anymore and can be removed. IG does not write any reports other than use cases. 
+        All reports that specify a WoT building block, even informative ones, are done by the WG.
+        Also, there is a repeating statement below -->
       <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
 
     <div class="noprint">
@@ -101,8 +103,8 @@
     </div>
 
     <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
-      on <a href="https://github.com/w3c/wot">GitHub</a>.
-      Feel free to raise <a href="https://github.com/w3c/wot/issues">issues</a>.
+      on <a href="https://github.com/w3c/wot-charter-drafts">GitHub</a>.
+      Feel free to raise <a href="https://github.com/w3c/wot-charter-drafts/issues">issues</a>.
     </p>
 
     <div id="details">
@@ -178,23 +180,23 @@
     <div id="background" class="background">
       <h2>Motivation and Background</h2>
       <!-- Brief background of landscape, technology, and relationship to the Web, users, developers, implementers, and industry. -->
-      <p>This working group is tasked with the standardization
-        or extension of several technological building blocks
-        identified by the
-        <a href="https://www.w3.org/groups/ig/wot">Web of Things Interest Group</a> (IG)
-        as being important to advancing the Web of Things.
-        The WoT building blocks are intended to complement existing
-        and emerging IoT standards by focusing on enabling cross-platform and cross-domain interoperability.
+      <p>As a continuation of the work in <a href="https://www.w3.org/2022/07/wot-wg-2022.html">the previous charter</a>, 
+        this working group is tasked with the standardization or extension of the building blocks
+        identified by the use cases resulting from the work of <a href="https://www.w3.org/groups/ig/wot">the Web of
+        Things Interest Group</a> (IG) as being important to advance the Web of Things.
+        The WoT building blocks are intended to complement and integrate to existing and emerging IoT standards using Web technologies. 
+        As a result, the building blocks focus on enabling cross-platform and cross-domain interoperability in the IoT.
 <!--
         The proposed work items are summarized in the <a href="#scope">Scope</a> section, and
-        include <span class="todo">(REVISE) interoperability profiles for particular usage contexts;
-          vocabulary support for new protocols, security schemes, and links;
-          standardized discovery mechanisms;
-          and improvements to Thing Description Templates.</span>
-        These work items will be prototyped and tested by multiple implementors in
+        include <span class="todo">(KEEP in Sync) interoperability profiles for out-of-the-box interoperability;
+          protocol and payload bindings for ecosystem support; improving the descriptive power of Thing Descriptions for 
+          further use cases and improvements to the discovery mechanism;
+          </span>
+        <span class="todo">These work items will be prototyped and tested by multiple implementors in
         WoT IG <a href="https://w3c.github.io/wot/current-practices/wot-practices.html#plugfests">PlugFests</a>
         during development.
         Open-source implementations will be prioritized.
+        </span>
 -->
       </p>
     </div>
@@ -213,7 +215,7 @@
       <li>Update and improve security and privacy controls.</li>
       <li>Address the functional requirements of new use cases, such as Digital Twins.</li>
       </ul>
-
+      
       <p>Specific work items are listed below, with links to the deliverables they
       would affect.
       After each work item, in parenthesis, we identify the deliverables it may be included in.
@@ -255,8 +257,10 @@
            <dd>Define lifecycle process to establish mutual trust and identification.</dd>
         </dl>
 
-        Details for planned work items are available in a 
+      <p>
+        Details for planned work items, which however are subject to change, are available in a 
         <a href="https://w3c.github.io/wot-charter-drafts/wot-wg-2023-details.html">separate document</a>.
+      </p>
 
       </div>
 
@@ -307,26 +311,46 @@
               This will be a revision of the current <i>Web of Things (WoT) Discovery</i> specification published
               at <a href="https://www.w3.org/TR/wot-discovery/">https://www.w3.org/TR/wot-discovery/</a>,
               as a Candidate Recommendation on 19 January 2023.</p>
-          </dd>
-          <dt id="binding-deliverable" class="spec">Web of Things (WoT) Binding Templates</dt>
+            </dd>
+            <dt id="binding-deliverable" class="spec">Web of Things (WoT) Binding Templates</dt>
+            <dd>
+              <p>
+                This specification normatively defines and summarizes the structural mechanism to bind protocols, 
+                payload and media formats in order to allow integration of ecosystems into the Web of Things, using the already-existing
+                extension points of the Thing Description deliverable.
+                The Working Group will define the policy and requirements in order to include 
+                references to separate binding documents, which specify the individual bindings.
+                These references will be either informative or normative, as appropriate.
+              </p>
+
+              <p class="draft-status"><b>Draft state:</b>No draft</p>
+              <p class="milestone todo"><b>Expected completion:</b> TBD</p>
+              <p class="todo"><b>Adopted Draft:</b>TBD</p>
+	          </dd>
+          </dl>
+
+          <dt id="profiles-deliverable" class="spec">Web of Things (WoT) Profile</dt>
           <dd>
             <p>
-              This specification defines the mechanism to bind protocols, payload and media formats, or combination of
-              the two to the Web of Things.
-              The binding mechanism will be a normative document with the following set of registry sections:
-            <ul>
-              <li>3 registry sections dedicated to stable bindings that reach at least a working draft status</li>
-              <li>3 registry sections dedicated to experimental bindings that are at least publicly available</li>
-            </ul>
+              This specification defines a profiling mechanism to enable out-of-the-box interoperability between
+              Things and Consumers which conform to a prescriptive set of constraints, and defines at least a first 
+              basic HTTP-based profile.
             </p>
-
-            <p class="draft-status"><b>Draft state:</b>No draft</p>
-            <p class="milestone todo"><b>Expected completion:</b> TBD</p>
-            <p class="todo"><b>Adopted Draft:</b>TBD</p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/wot-profile/">Working Draft</a></p>
+            <p class="milestone todo"><b>Expected completion:</b>TBD</p>
+          </dd>
+          <dt id="profiles-deliverable-next" class="spec">Web of Things (WoT) Profile (Update)</dt>
+          <dd>
+            <p>
+              This specification is an update to the WoT Profile specification, with an updated profiling mechanism
+              and additional normative profiles as appropriate.
+            </p>
+            <p class="draft-status"><b>Draft state:</b> No draft</p>
+            <p class="milestone todo"><b>Expected completion:</b>TBD</p>
           </dd>
         </dl>
+        </section>
 
-      </section>
 
       <section id="ig-other-deliverables">
         <h3>
@@ -346,6 +370,10 @@
             efforts, alignment with the WoT Discovery specification will be the main topic.<br>
             <!-- Since we plan to publish an update soon the URL might need to change -->
             Draft state: <a href="https://www.w3.org/TR/2020/NOTE-wot-scripting-api-20201124/">Group Note</a>
+          </li>
+          <li>Binding Documents for Specific Protocol, Payload and Ecosystems (W3C Notes): These documents will take 
+            the requirements specified in <a href="binding-deliverable">Web of Things (WoT) Binding Templates</a> and 
+            specify how protocols and payload formats should be used to allow integration of specific classes of IoT systems and ecosystems.
           </li>
         </ul>
       </section>
@@ -429,7 +457,7 @@
           <!--
             <dt><a href="https://w3c.github.io/charter-drafts/charter-template.html"><i class="todo">[other name]</i> Working Group</a></dt>
               <dd><i class="todo">[specific nature of liaison]</i></dd>
--->
+          -->
             <dt><a href="https://www.w3.org/community/wot/">Web of Things Community Group</a></dt>
               <dd>For collaboration on community outreach of the WG reports to increase adoption and implementation, 
 		  as well as collecting feedback from the global community. 
