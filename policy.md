@@ -1,4 +1,5 @@
 # Collaboration Policy
+Following is a DRAFT and additional discussion is needed.  This is not binding.
 
 The WG manages collaboration with the groups below with the rules listed under each of them.w 
 
