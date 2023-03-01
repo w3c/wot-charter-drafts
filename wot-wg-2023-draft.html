@@ -196,16 +196,41 @@
       <h2>Scope</h2>
       <!-- What exactly is in scope, and out of scope.
           For legal review. Be brief. -->
-      <p>During this charter, the Working Group would:</p>
-      <ul>
-      <li>Update the Architecture, Thing Description, Profile, and Discovery specifications
-      to address major issues discovered during implementation of the 1.0 and 1.1 specifications.
-      Unlike the last charter, these would not be limited to backward-compatible updates.</li> 
-      <li>Reorganize Security Schemes and Protocol/Payload Bindings to be more modular and less specific
-      to HTTP.</li>
-      <li>Update and improve security and privacy controls.</li>
-      <li>Address the functional requirements of new use cases, such as Digital Twins.</li>
-      </ul>
+      <p>During this charter, the Working Group would work on the following:</p>
+
+        <dl>
+          <dt><strong>Updates to existing specifications</strong>:</dt>
+          <dd>The WG will add new features and address issues discovered during implementation of already published specifications. 
+            Unlike the last charter, these would not be limited to backward-compatible updates.
+          </dd>
+          <dt><strong>Support WoT Interoperability</strong>:</dt>
+          <dd>The WG will improve out-of-the-box interoperability and enable the integration of WoT into other ecosystems and communities. 
+            Thus, the WG will define core binding and profiling mechanisms, specify additional protocol and payload bindings, and define appropriate profiles.
+          </dd>
+          <dt>
+            <strong>Improve Management of TDs</strong>:
+          </dt>
+          <dd>
+            Additional mechanisms around for the management of TDs are needed to improve workflows that use them. 
+            Thus, the WG will update the Discovery specification with additional features, including geolocation. 
+            In other specifications, the WG intends to add a mechanism to sign TDs, define how to manage versions of TDs and define how to
+             parse, validate, consume and lint TDs.
+          </dd>
+          <dt>
+            <strong>Increase Descriptiveness of TDs</strong>:
+          </dt>
+          <dd>
+            The WG will work on increasing the descriptive power of TDs to allow using them in more use cases. This includes
+            describing dynamic resources, reusable connections, historical values (timeseries), repeating payloads, both static and dynamic
+            geolocation information, manageable actions and more precise definitions of data schemas for each type of operation.
+          </dd>
+          <dt><strong>Improve Security and Privacy</strong>:</dt>
+           <dd>Define reusable, external security vocabularies, simplify the use of security schemes, and define and onboarding
+          lifecycle process to establish mutual trust and identification, and other work as appropriate.</dd>
+          <dt><strong>New Use Cases</strong>:
+          </dt>
+          <dd>Address the functional requirements of new use cases, such as Digital Twins.</dd>
+        </dl>
 
       <p>
         Details for planned work items, which however are subject to change, are available in a 
@@ -428,7 +453,7 @@
             <dt><a href="https://w3c.github.io/charter-drafts/charter-template.html"><i class="todo">[other name]</i> Working Group</a></dt>
               <dd><i class="todo">[specific nature of liaison]</i></dd>
           -->
-	    <dt><a href="https://www.w3.org/2018/json-ld-wg/">JSON-LD Working Group</a></dt>
+ 	    <dt><a href="https://www.w3.org/2018/json-ld-wg/">JSON-LD Working Group</a></dt>
 	      <dd>For collaboration on JSON-LD features and WoT use cases.</dd>
 	    <dt><a href="https://www.w3.org/community/exi-next/">Efficient Extensible Interchange Community Group</a></dt>
 	      <dd>In relation to efficient interchange for Thing Descriptions.</dd>
