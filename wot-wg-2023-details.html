@@ -100,6 +100,13 @@
             Description, Binding Templates):
           </dt>
           <dd>Add support for a connection description to be shared among affordance operations.</dd>
+            <a href="#streaming-workitem"><strong>Streaming</strong></a> (Thing
+            Description, Binding Templates):
+          </dt>
+          <dd>Add infrastructure (as necessary) to support streaming protocols which
+          allow ongoing and time-sensitive delivery of data including for audio and video.
+          </dd>
+        </dl>
         </dl>
       </dd>
       <dt>
@@ -149,6 +156,11 @@
             <a href="#bacnet-binding-workitem"><strong>BACnet Protocol Binding</strong></a> (Binding Templates):
           </dt>
           <dd>Add normative BACnet binding</dd>
+          <dt>
+            <a href="#rtsp-binding-workitem"><strong>RTSP Protocol Binding</strong></a> (Binding Templates):
+          </dt>
+          <dd>Add normative RTSP binding.  
+          See also the <a href=#streaming-workitem">Streaming</a> workitem.</dd>
           <dt>
             <a href="#opcua-binding-workitem"><strong>OPC UA Protocol Binding</strong></a> (Binding Templates):
           </dt>
@@ -383,6 +395,29 @@
       <p></p>
     </section>
     <section>
+      <h2 id="streaming-workitem">Streaming</h2>
+      <p>A streaming protocol establishes an ongoing connection supporting
+      delivery of time-sensitive information such as audio or video.
+      Note that this connection in general
+      may be over either reliable (TCP) or unreliable (UDP)
+      transports, or over a combination, and may also support encryption or
+      content management.
+      Streaming may also be used to support other kinds of ongoing time-sensitive
+      data delivery.
+      </p><p>
+      While related to event notification mechanisms, streaming in practice
+      is supported by a specific set of protcols such as RTSP, HLS, DASH, MSE, WebRTC, etc.
+      This workitem would add any infrastructure needed to TDs in order to support
+      streaming protocol bindings generally, for example, by adding additional
+      subprotocols supporting stream publication and subscription management (if needed).
+      </p><p>
+      In order to clearly define what infrastructure is actually needed, if any,
+      one or more
+      concrete streaming protocol bindings should also be attempted, such
+      as <a href="#rtsp-binding-workitem">RTSP</a>.
+      </p>
+    </section>
+    <section>
       <h2 id="canon-workitem">Canonicalization</h2>
       <p>Thing Descriptions can contain the same information but serialized differently even in the same serialization
       format, due to structures such as maps which do not impose an order. This is problematic for comparing TDs or
@@ -494,6 +529,36 @@
       standalone normative document. This will include a BACnet ontology, introduce default values and describe the
       terms associated with the behavior of Things regarding the usage of the BACnet. Note: How should we mention
       ASHRAE here?</p>
+    </section>
+    <section>
+      <h2 id="rtsp-binding-workitem" class="todo">RTSP Protocol Binding</h2>
+      <p>The WG will work on specifying a RTSP Protocol Binding for the Web of Things in order to publish it as a
+      standalone normative document. 
+      This will include any necessary RTSP ontology (e.g. for RTSP methods), 
+      introduce default values, and describe the
+      terms associated with the behavior of Things regarding the usage of RTSP. 
+</p><p>
+      RTSP is widely supported in IP cameras.
+      The binding will permit multiple video and audio streams to be managed.
+      Note that single cameras may have multiple videos streams supporting 
+      different resolutions or encodings, may likewise support multiple
+      audio streams for different rates or encodings, and may support
+      bidirectional audio streams (e.g. a speaker as well as a microphone).
+      This is related to the <a href="#streaming-workitem">Streaming</a> workitem.
+</p><p>
+      Note 1: There are many other streaming protocols.  RTSP is older but is widely
+      supported in IP cameras in particular.  
+      Unfortunately it is typically not directly supported
+      in browsers, so we may want to consider additional streaming protocols such
+      as HLS, DASH, MSE, WebRTC, RTMP, or others. Many of these are supported in 
+      browsers although often optimized for non-camera use cases, such as video
+      conferencing (WebRTC) or content delivery (HLS, DASH).
+</p><p>
+      Note 2: In addition IP cameras also often
+      have associated pan-tilt-zoom (PTZ) controls so we may want to define some
+      vocabulary terms to allow affordances for 
+      such controls to be described consistently in a TD.
+      </p>
     </section>
     <section>
       <h2 id="opcua-binding-workitem" class="todo">OPC UA Protocol Binding</h2>
