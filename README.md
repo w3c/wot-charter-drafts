@@ -15,6 +15,29 @@ As decided in the [WebConf on 27 Apr 2016](https://www.w3.org/2016/04/27-wot-min
 * The current status of the charter document is accessable for everyone over the w3c.github.io page.
 * Feedback on the [mailing list](https://lists.w3.org/Archives/Public/public-wot-wg/) is still possible and welcome. A directly appointed helper or otherwise the W3C staff is responsible to create corresponding comments or pull-requests on GitHub.
 
+## Minutes from the Charter meetings
+### Session 1
+* [16 Jan 2023](https://www.w3.org/2023/01/16-wot-minutes.html)
+* [17 Jan 2023](https://www.w3.org/2023/01/17-wot-minutes.html)
+* [18 Jan 2023](https://www.w3.org/2023/01/18-wot-minutes.html)
+* [19 Jan 2023](https://www.w3.org/2023/01/19-wot-minutes.html)
+
+### Session 2
+* [14 Feb 2023](https://www.w3.org/2023/02/14-wot-minutes.html)
+* [15 Feb 2023](https://www.w3.org/2023/02/15-wot-minutes.html)
+* [16 Feb 2023](https://www.w3.org/2023/02/16-wot-minutes.html)
+
+### Session 3
+* [21 Feb 2023](https://www.w3.org/2023/02/21-wot-minutes.html)
+* [23 Feb 2023](https://www.w3.org/2023/02/23-wot-minutes.html)
+
+### Session 4
+* [27 Feb 2023](https://www.w3.org/2023/02/27-wot-minutes.html)
+* [28 Feb 2023](https://www.w3.org/2023/02/28-wot-minutes.html)
+* [1 Mar 2023](https://www.w3.org/2023/03/01-wot-minutes.html)
+* [2 Mar 2023](https://www.w3.org/2023/03/02-wot-minutes.html)
+
+
 ## How to participate
 
 Check [How to Get Involved](https://github.com/w3c/wot#how-to-get-involved) if you are unsure how to open a pull-request.
