@@ -37,6 +37,9 @@ As decided in the [WebConf on 27 Apr 2016](https://www.w3.org/2016/04/27-wot-min
 * [1 Mar 2023](https://www.w3.org/2023/03/01-wot-minutes.html)
 * [2 Mar 2023](https://www.w3.org/2023/03/02-wot-minutes.html)
 
+### Session 5
+* [8 Mar 2023](https://www.w3.org/2023/03/08-wot-minutes.html)
+* [9 Mar 2023](https://www.w3.org/2023/03/09-wot-minutes.html)
 
 ## How to participate
 
