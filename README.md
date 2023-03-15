@@ -17,10 +17,10 @@ As decided in the [WebConf on 27 Apr 2016](https://www.w3.org/2016/04/27-wot-min
 
 ## Minutes from the Charter meetings
 ### Session 1
-* [16 Jan 2023](https://www.w3.org/2023/01/16-wot-minutes.html) - Scribe: Ege
-* [17 Jan 2023](https://www.w3.org/2023/01/17-wot-minutes.html) - Scribe: Kaz
-* [18 Jan 2023](https://www.w3.org/2023/01/18-wot-minutes.html) - Scribe: McCool/Koster
-* [19 Jan 2023](https://www.w3.org/2023/01/19-wot-minutes.html) - Scribe: Sebastian/Kaz
+* [16 Jan 2023](https://www.w3.org/2023/01/16-wot-minutes.html) - Scribe: Ege - reviewed
+* [17 Jan 2023](https://www.w3.org/2023/01/17-wot-minutes.html) - Scribe: Kaz - reviewed
+* [18 Jan 2023](https://www.w3.org/2023/01/18-wot-minutes.html) - Scribe: McCool/Koster - reviewed
+* [19 Jan 2023](https://www.w3.org/2023/01/19-wot-minutes.html) - Scribe: Sebastian/Kaz - reviewed
 
 ### Session 2
 * [14 Feb 2023](https://www.w3.org/2023/02/14-wot-minutes.html) - Scribe: Kaz
