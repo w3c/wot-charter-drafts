@@ -44,6 +44,7 @@ As decided in the [WebConf on 27 Apr 2016](https://www.w3.org/2016/04/27-wot-min
 ### Session 6
 * [13 Mar 2023](https://www.w3.org/2023/03/13-wot-minutes.html) - Scribe: Luca
 * [15 Mar 2023](https://www.w3.org/2023/03/15-wot-minutes.html) - Scribe: Sebastian/Kaz
+* [16 Mar 2023](https://www.w3.org/2023/03/16-wot-minutes.html) - Scribe: Kaz
 
 ## How to participate
 
