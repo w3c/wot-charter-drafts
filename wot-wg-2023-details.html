@@ -124,61 +124,67 @@
         </dl>
       </dd>
       <dt>
-        <strong>Protocol and Payload Bindings</strong> (<a href="#binding:-deliverable">Binding Templates</a>):
+        <strong>Protocol and Payload Bindings</strong>:
       </dt>
       <dd>
-        Define bindings for specific protocols and payloads of interest while focusing to support ecosystems.
+        Define protocol bindings, payload bindings and mappings of WoT to existing platforms and ecosystems.
         <dl>
           <dt>
-            <a href="#http-binding-workitem"><strong>HTTP Protocol Binding</strong></a> (Binding Templates):
+            <a href="#http-binding-workitem"><strong>HTTP Protocol Binding</strong></a>:
           </dt>
-          <dd>Add normative HTTP binding</dd>
+          <dd>Specify default HTTP protocol binding and protocol binding vocabulary.</dd>
           <dt>
-            <a href="#coap-binding-workitem"><strong>CoAP Protocol Binding</strong></a> (Binding Templates):
+            <a href="#sse-binding-workitem"><strong>SSE Protocol Binding</strong></a>:
           </dt>
-          <dd>Add normative CoAP binding</dd>
+          <dd>Specify default SSE (Server-Sent Events) protocol binding and protocol binding vocabulary.</dd>
           <dt>
-            <a href="#mqtt-binding-workitem"><strong>MQTT Protocol Binding</strong></a> (Binding Templates):
+            <a href="#webhook-binding-workitem"><strong>Webhook Protocol Binding</strong></a>:
           </dt>
-          <dd>Add normative MQTT binding</dd>
+          <dd>Specify default Webhook protocol binding and protocol binding vocabulary.</dd>
           <dt>
-            <a href="#modbus-binding-workitem"><strong>Modbus Protocol Binding</strong></a> (Binding Templates):
+            <a href="#coap-binding-workitem"><strong>CoAP Protocol Binding</strong></a>:
           </dt>
-          <dd>Add normative Modbus binding</dd>
+          <dd>Specify default CoAP protocol binding and protocol binding vocabulary.</dd>
           <dt>
-            <a href="#bacnet-binding-workitem"><strong>BACnet Protocol Binding</strong></a> (Binding Templates):
+            <a href="#mqtt-binding-workitem"><strong>MQTT Protocol Binding</strong></a>:
           </dt>
-          <dd>Add normative BACnet binding</dd>
+          <dd>Specify default MQTT protocol binding and protocol binding vocabulary.</dd>
           <dt>
-            <a href="#opcua-binding-workitem"><strong>OPC UA Protocol Binding</strong></a> (Binding Templates):
+            <a href="#modbus-binding-workitem"><strong>Modbus Protocol Binding</strong></a>:
           </dt>
-          <dd>Add normative OPC UA binding</dd>
+          <dd>Specify default Modbus protocol binding and protocol binding vocabulary.</dd>
           <dt>
-            <a href="#grpc-binding-workitem"><strong>gRPC Protocol Binding</strong></a> (Binding Templates):
+            <a href="#bacnet-binding-workitem"><strong>BACnet Protocol Binding</strong></a>:
           </dt>
-          <dd>Add normative gRPC binding</dd>
+          <dd>Specify default BACnet protocol binding and protocol binding vocabulary.</dd>
           <dt>
-            <a href="#json-binding-workitem"><strong>JSON Payload Binding</strong></a> (Binding Templates):
+            <a href="#opcua-binding-workitem"><strong>OPC UA Protocol Binding</strong></a>:
           </dt>
-          <dd>Add normative JSON binding</dd>
+          <dd>Specify default OPC UA protocol binding and protocol binding vocabulary.</dd>
           <dt>
-            <a href="#cbor-binding-workitem"><strong>CBOR Payload Binding</strong></a> (Binding Templates):
+            <a href="#grpc-binding-workitem"><strong>gRPC Protocol Binding</strong></a>:
           </dt>
-          <dd>Add normative CBOR binding</dd>
+          <dd>Specify default gRPC protocol binding and protocol binding vocabulary.</dd>
           <dt>
-            <a href="#xml-binding-workitem"><strong>XML Payload Binding</strong></a> (Binding Templates):
+            <a href="#json-binding-workitem"><strong>JSON Payload Binding</strong></a>:
           </dt>
-          <dd>Add normative XML binding</dd>
+          <dd>Specify a JSON payload binding.</dd>
           <dt>
-            <a href="#cloudevents-binding-workitem"><strong>CloudEvents Payload Binding</strong></a> (Binding
-            Templates):
+            <a href="#cbor-binding-workitem"><strong>CBOR Payload Binding</strong></a>:
           </dt>
-          <dd>Add normative CloudEvents binding</dd>
+          <dd>Specify a CBOR payload binding.</dd>
           <dt>
-            <a href="#echonet-binding-workitem"><strong>ECHONET Lite Web API Combination Binding</strong></a> (Binding
-            Templates):
+            <a href="#xml-binding-workitem"><strong>XML Payload Binding</strong></a>:
           </dt>
-          <dd>Add normative ECHONET Lite Web API binding</dd>
+          <dd>Specify an XML payload binding.</dd>
+          <dt>
+            <a href="#cloudevents-binding-workitem"><strong>CloudEvents Payload Binding</strong></a>:
+          </dt>
+          <dd>Specify a CloudEvents payload binding.</dd>
+          <dt>
+            <a href="#echonet-binding-workitem"><strong>ECHONET Lite Web API Combination Binding</strong></a>:
+          </dt>
+          <dd>Specify an ECHONET Lite Web API combination binding.</dd>
         </dl>
       </dd>
       <dt><strong>Other</strong>:</dt>
@@ -466,78 +472,88 @@
     </section>
     <section>
       <h2 id="http-binding-workitem">HTTP Protocol Binding</h2>
-      <p>The WG will work on the current HTTP Protocol Binding that is split also into the TD specification in order to
-      publish it as a standalone normative document. This will reference the HTTP in RDF ontology, introduce default
-      values and describe the terms associated with the behavior of Things regarding the usage of the HTTP.</p>
+      <p>The WG will consolidate the HTTP Protocol Binding that is currently split across the TD specification,
+        Profile specification and HTTP Binding Template document into a single specification. This will 
+        include a default HTTP protocol binding (based on the protocol binding in the HTTP Basic Profile) and a 
+        vocabulary (based on the HTTP in RDF ontology) for providing custom HTTP protocol bindings in Thing 
+        Descriptions.</p>
+    </section>
+    <section>
+      <h2 id="sse-binding-workitem">SSE Protocol Binding</h2>
+      <p>The WG will work on an SSE (Server-Sent Events) Protocol Binding specification including a default 
+        protocol binding (based on the protocol binding from the HTTP SSE Profile) and a vocabulary for providing custom
+        SSE protocol bindings in Thing Descriptions.</p>
+    </section>
+    <section>
+      <h2 id="webhook-binding-workitem">Webhook Protocol Binding</h2>
+      <p>The WG will work on a Webhook Protocol Binding specification including a default protocol binding (based 
+        on the protocol binding from the HTTP Webhook Profile) and a vocabulary for providing custom Webhook protocol 
+        bindings in Thing Descriptions.</p>
     </section>
     <section>
       <h2 id="coap-binding-workitem">CoAP Protocol Binding</h2>
-      <p>The WG will work on the current Modbus Protocol Binding in order to publish it as a standalone normative
-      document. This will include a CoAP ontology, introduce default values and describe the terms associated with the
-      behavior of Things regarding the usage of the CoAP.</p>
+      <p>The WG will work on a CoAP Protocol Binding specification including a default protocol binding and a vocabulary
+        (based on the current CoAP Binding Template document) for providing custom CoAP protocol bindings in Thing 
+        Descriptions.</p>
     </section>
     <section>
       <h2 id="mqtt-binding-workitem">MQTT Protocol Binding</h2>
-      <p>The WG will work on the current MQTT Protocol Binding in order to publish it as a standalone normative
-      document. This will include a MQTT ontology, introduce default values and describe the terms associated with the
-      behavior of Things and Brokers regarding the usage of the MQTT.</p>
+      <p>The WG will work on an MQTT Protocol Binding specification including a default protocol binding and a
+        vocabulary (based on the current MQTT Binding Template document) for providing custom MQTT protocol bindings in 
+        Thing Descriptions.
     </section>
     <section>
       <h2 id="modbus-binding-workitem">Modbus Protocol Binding</h2>
-      <p>The WG will work on the current Modbus Protocol Binding in order to publish it as a standalone normative
-      document. This will include a Modbus ontology, introduce default values and describe the terms associated with
-      the behavior of Things regarding the usage of the Modbus.</p>
+      <p>The WG will work on a Modbus Protocol Binding specification including a default protocol binding and a 
+        vocabulary (based on the current Modbus Binding Template document) for providing custom Modbus protocol bindings 
+        in Thing Descriptions.</p>
     </section>
     <section>
       <h2 id="bacnet-binding-workitem" class="todo">BACnet Protocol Binding</h2>
-      <p>The WG will work on specifying a BACnet Protocol Binding for the Web of Things in order to publish it as a
-      standalone normative document. This will include a BACnet ontology, introduce default values and describe the
-      terms associated with the behavior of Things regarding the usage of the BACnet. Note: How should we mention
-      ASHRAE here?</p>
+      <p>The WG will work on a BACnet Protocol Binding specification including a default protocol binding and a 
+        vocabulary for providing custom Modbus protocol bindings in Thing Descriptions. Note: How should we mention 
+        ASHRAE here?</p>
     </section>
     <section>
       <h2 id="opcua-binding-workitem" class="todo">OPC UA Protocol Binding</h2>
-      <p>The WG will work on specifying an OPC UA Protocol Binding for the Web of Things in order to publish it as a
-      standalone normative document. This will include a OPC UA ontology, introduce default values and describe the
-      terms associated with the behavior of Things regarding the usage of the OPC UA. Note: How should we mention OPC
-      Foundation here?</p>
+      <p>The WG will work on an OPC UA Protocol Binding specification including a default protocol binding and a 
+        vocabulary for providing custom OPC UA protocol bindings in Thing Descriptions. Note: How should we mention OPC 
+        Foundation here?</p>
     </section>
     <section>
       <h2 id="grpc-binding-workitem">gRPC Protocol Binding</h2>
-      <p>The WG will work on specifying a gRPC Protocol Binding for the Web of Things in order to publish it as a
-      standalone normative document. This will include a gRPC ontology, introduce default values and describe the terms
-      associated with the behavior of Things regarding the usage of the gRPC.</p>
+      <p>The WG will work on an gRPC Protocol Binding specification including a default protocol binding and a 
+        vocabulary for providing custom gRPC protocol bindings in Thing Descriptions.</p>
     </section>
     <section>
       <h2 id="json-binding-workitem">JSON Payload Binding</h2>
-      <p>The WG will work on specifying a JSON Payload Binding for the Web of Things in order to publish it as a
-      standalone normative document. This will include specification on the usage of Data Schema terms as well as
-      <code>contentType</code> term usage within forms.</p>
+      <p>The WG will work on a JSON Payload Binding specification including specifying the serialization of payloads 
+        described by data schemas into JSON, usage of the <code>contentType</code> term in forms and default payload 
+        formats for some operations.</p>
     </section>
     <section>
       <h2 id="cbor-binding-workitem">CBOR Payload Binding</h2>
-      <p>The WG will work on specifying a CBOR Payload Binding for the Web of Things in order to publish it as a
-      standalone normative document. This will include specification on the usage of Data Schema terms as well as
-      <code>contentType</code> term usage within forms.</p>
+      <p>The WG will work on a CBOR Payload Binding specification including specifying the serialization of payloads 
+        described by data schemas into CBOR, usage of the <code>contentType</code> term in forms and default payload 
+        formats for some operations.</p>
     </section>
     <section>
       <h2 id="xml-binding-workitem">XML Payload Binding</h2>
-      <p>The WG will work on specifying an XML Payload Binding for the Web of Things in order to publish it as a
-      standalone normative document. This will include specification on the usage of Data Schema terms as well as
-      <code>contentType</code> term usage within forms.</p>
+      <p>The WG will work on an XML Payload Binding specification including specifying the serialization of payloads 
+        described by data schemas into XML, usage of the <code>contentType</code> term in forms and default payload 
+        formats for some operations.</p>
     </section>
     <section>
       <h2 id="cloudevents-binding-workitem">CloudEvents Payload Binding</h2>
-      <p>The WG will work on specifying an CloudEvents Payload Binding for the Web of Things in order to publish it as
-      a standalone normative document. This will include specification on the usage of Data Schema terms as well as
-      <code>contentType</code> term usage within forms.</p>
+      <p>The WG will work on a CloudEvents Payload Binding specification including specifying the serialization of payloads 
+        described by data schemas into CloudEvents, usage of the <code>contentType</code> term in forms and default payload 
+        formats for some operations.</p>
     </section>
     <section>
       <h2 id="echonet-binding-workitem" class="todo">ECHONET Lite Web API Combination Binding</h2>
-      <p>The WG will work on specifying an ECHONET Lite Web API Combination Binding for the Web of Things in order to
-      publish it as a standalone normative document. This will include specification on the usage of Data Schema terms,
-      together with how form elements should be structured with possible other assertions on the TD instances. Note:
-      How should we mention ECHONET Consortium here?</p>
+      <p>The WG will work on specifying an ECHONET Lite Web API Combination Binding specification. This will include 
+        specification on the usage of Data Schema terms, together with how form elements should be structured with 
+        possible other assertions on the TD instances. Note: How should we mention ECHONET Consortium here?</p>
     </section>
     <section>
       <h2 id="wotcg-coordination">WoT CG Coordination</h2>
@@ -562,9 +578,12 @@
         over HTTP, e.g. using Server-Sent Events and/or Webhooks</li>
         <li>Consider defining other profiles, e.g. a CoAP-based profile for constrained devices which do not have the
         resources to implement HTTP-based profiles</li>
-        <li>Stretch goal: Specify an updated profiling mechanism which reuses the sub-protocol and context extension
-        mechanisms from the WoT Thing Description specification, in order to more tightly constrain how profiles are
-        defined</li>
+        <li>Specify an updated profiling mechanism which better integrates with the extension points of
+          other WoT specifications and more precisely defines what profiles can constrain. This will include 
+          the profiling and binding mechanisms working together such that profiles reference default 
+          protocol and payload bindings in binding documents, rather than define protocol bindings within the 
+          profile itself.
+        </li>
       </ol>
     </section>
   </section>
