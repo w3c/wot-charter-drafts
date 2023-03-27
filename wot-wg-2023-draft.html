@@ -81,14 +81,13 @@
     <!-- delete PROPOSED after AC review completed -->
 
     <p class="mission">
-      <!-- counter the fragmentation needs to be changed but not sure what to use -->
       The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/wot">Web of Things Working Group</a>
       is to counter the fragmentation of the IoT through the specification of building blocks
       that enable easy integration of IoT devices and services across IoT platforms and application domains.
-      These building blocks should complement and enhance the use of existing standards, and allow WoT to
-      be used within other ecosystems and communities.
-      This reduces the initial friction for adoption and supports further industry adoption.
       <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
+      These building blocks complement and enhance the use of existing standards and provide a common description 
+      across different ecosystems, standards, and communities.
+      <!-- This reduces the initial friction for adoption and supports further industry adoption. -->
 
     <div class="noprint">
       <p class="join"><a href="https://www.w3.org/groups/wg/wot/join">Join the Web of Things Working Group.</a></p>
@@ -134,7 +133,7 @@
               Chairs
             </th>
             <td>
-              <i class="todo">[chair name] (affiliation)</i>
+              <i class="todo">Sebastian Kaebisch (Siemens) and Michael McCool (Intel) (PROPOSED)</i>
             </td>
           </tr>
           <tr>
@@ -162,33 +161,31 @@
         </tbody>
       </table>
 
+<!--
       <p class="issue"><b>Note:</b> The <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process
           Document</a> requires “The level of confidentiality of the group's proceedings and deliverables”; however, it
         does not mandate where this appears. Since all W3C Working Groups should be chartered as public, this notice has
         been moved from the essentials table to the <a
           href="https://w3c.github.io/charter-drafts/charter-template.html#public">communication section</a>.</p>
+-->
     </div>
 
     <div id="background" class="background">
       <h2>Motivation and Background</h2>
       <!-- Brief background of landscape, technology, and relationship to the Web, users, developers, implementers, and industry. -->
       <p>As a continuation of the work in <a href="https://www.w3.org/2022/07/wot-wg-2022.html">the previous charter</a>, 
-        this working group is tasked with the standardization or extension of the building blocks identified as being 
-        important to advance the Web of Things.
-        The WoT building blocks are intended to complement and integrate to existing and emerging IoT standards using Web technologies. 
-        As a result, the building blocks focus on enabling cross-platform and cross-domain interoperability in the IoT.
-<!--
-        The proposed work items are summarized in the <a href="#scope">Scope</a> section, and
-        include <span class="todo">(KEEP in Sync) interoperability profiles for out-of-the-box interoperability;
-          protocol and payload bindings for ecosystem support; improving the descriptive power of Thing Descriptions for 
-          further use cases and improvements to the discovery mechanism;
-          </span>
+        this working group is tasked with the standardization or extension of the building blocks
+        to address the use cases and requirements identified by <a href="https://www.w3.org/groups/ig/wot">the Web of
+        Things Interest Group</a> (IG) to advance the Web of Things.
+        The WoT building blocks complement and integrate existing and emerging IoT standards using Web technologies. 
+        As a result, the building blocks enable cross-platform and cross-domain interoperability in the IoT.
+      <!--
         <span class="todo">These work items will be prototyped and tested by multiple implementors in
         WoT IG <a href="https://w3c.github.io/wot/current-practices/wot-practices.html#plugfests">PlugFests</a>
         during development.
         Open-source implementations will be prioritized.
         </span>
--->
+      -->
       </p>
     </div>
 
@@ -199,37 +196,48 @@
       <p>During this charter, the Working Group would work on the following:</p>
 
         <dl>
-          <dt><strong>Updates to existing specifications</strong>:</dt>
-          <dd>The WG will add new features and address issues discovered during implementation of already published specifications. 
-            Unlike the last charter, these would not be limited to backward-compatible updates.
-          </dd>
-          <dt><strong>Support WoT Interoperability</strong>:</dt>
-          <dd>The WG will improve out-of-the-box interoperability and enable the integration of WoT into other ecosystems and communities. 
-            Thus, the WG will define core binding and profiling mechanisms, specify additional protocol and payload bindings, and define appropriate profiles.
+          <dt>
+		<strong>Support New Use Cases</strong>:
+          </dt>
+          <dd>Address the requirements of new use cases, such as Digital Twins and integration with edge and cloud systems.
+         </dd>
+	  <dt>
+		<strong>Update and Refactor Existing Specifications</strong>:
+	  </dt>
+          <dd>The WG will add new features, address issues discovered during implementation of the current set of specifications,
+          and reorganize material between documents as appropriate. 
+            These are not be limited to backward-compatible updates, however great care will be taken to minimize 
+	    the impact on existing implementations.
           </dd>
           <dt>
-            <strong>Improve Management of TDs</strong>:
+		<strong>Support WoT Interoperability</strong>:
+	  </dt>
+          <dd>The WG will improve out-of-the-box interoperability and enable the integration of WoT into other ecosystems and communities. 
+            Thus, the WG will define core binding and profiling mechanisms, specify additional protocol and payload bindings, 
+            and define appropriate profiles.
+          </dd>
+          <dt>
+          	<strong>Improve Management of TDs</strong>:
           </dt>
           <dd>
             Additional mechanisms around for the management of TDs are needed to improve workflows that use them. 
             Thus, the WG will update the Discovery specification with additional features, including geolocation. 
-            In other specifications, the WG intends to add a mechanism to sign TDs, define how to manage versions of TDs and define how to
-             parse, validate, consume and lint TDs.
           </dd>
           <dt>
-            <strong>Increase Descriptiveness of TDs</strong>:
+            	<strong>Increase Descriptiveness of TDs</strong>:
           </dt>
           <dd>
-            The WG will work on increasing the descriptive power of TDs to allow using them in more use cases. This includes
-            describing dynamic resources, reusable connections, historical values (timeseries), repeating payloads, both static and dynamic
+            The WG will work on increasing the descriptive power of TDs to allow using them in additional use cases. This includes
+            describing dynamic resources, historical values (timeseries), better describing payloads, both static and dynamic
             geolocation information, manageable actions and more precise definitions of data schemas for each type of operation.
           </dd>
-          <dt><strong>Improve Security and Privacy</strong>:</dt>
-           <dd>Define reusable, external security vocabularies, simplify the use of security schemes, and define and onboarding
-          lifecycle process to establish mutual trust and identification, and other work as appropriate.</dd>
-          <dt><strong>New Use Cases</strong>:
-          </dt>
-          <dd>Address the functional requirements of new use cases, such as Digital Twins.</dd>
+          <dt>
+	   	<strong>Improve Security and Privacy</strong>:
+	  </dt>
+          <dd>
+            Define modular security vocabularies, simplify the use of security schemes, 
+            and other work as appropriate.
+          </dd>
         </dl>
 
       <p>
@@ -266,7 +274,12 @@
       </h2>
 
       <p>Updated document status is available on the <a href="https://www.w3.org/groups/wg/wot/publications">group
-          publication status page</a>.</p>
+          publication status page</a>.
+      The specification names given below are not exact titles as
+      we are currently discussing how to best manage versioning and how to
+      reflect this in the title of documents.
+      Final titles will include "Web of Things".
+      </p>
       <section id="normative">
         <h3>
           Normative Specifications
@@ -275,36 +288,49 @@
           The Working Group will deliver the following W3C normative specifications:
         </p>
         <dl>
-          <dt id="discovery-deliverable" class="spec">Web of Things (WoT) Discovery 1.1</dt>
+          <dt id="wot-arch-update" class="spec">Architecture (Update)</dt>
+          <dd>
+            <p>This specification defines the Web of Things architecture,
+               terminology, fundamental concepts, architecture and deployment 
+               patterns, and horizontal security and privacy requirements.
+               It introduces and gives an overview of the 
+               family of WoT building block specifications described below.
+            </p>
+            <p class="draft-status"><b>Draft state:</b>No draft</p>
+            <p class="milestone"><b>Expected completion:</b>1 June 2025</p>
+            <p><b>Adopted Draft:</b>
+            This will be an update of the current <i>Web of Things (WoT) Architecture</i> specification published
+            at <a href="https://www.w3.org/TR/wot-architecture11/">https://www.w3.org/TR/wot-architecture11/</a>,
+            as a Candidate Recommendation on 19 January 2023.</p>
+        </dd>
+          <dt id="discovery-deliverable" class="spec">Discovery (Update)</dt>
           <dd>
             <p>This specification defines a Discovery process for WoT, and would be a backward-compatible
               update to the existing WoT Discovery Specification.</p>
 
             <p class="draft-status"><b>Draft state:</b>No draft</p>
-            <p class="milestone"><b>Expected completion:</b> Q3 2024</p>
+            <p class="milestone"><b>Expected completion:</b>1 June 2025</p>
             <p><b>Adopted Draft:</b>
               This will be a revision of the current <i>Web of Things (WoT) Discovery</i> specification published
               at <a href="https://www.w3.org/TR/wot-discovery/">https://www.w3.org/TR/wot-discovery/</a>,
               as a Candidate Recommendation on 19 January 2023.</p>
             </dd>
-            <dt id="binding-deliverable" class="spec">Web of Things (WoT) Binding Templates</dt>
+            <dt id="thing-description-deliverable" class="spec">Thing Description (Update)</dt>
             <dd>
               <p>
-                This specification normatively defines and summarizes the structural mechanism to bind protocols, 
-                payload and media formats in order to allow integration of ecosystems into the Web of Things, using the already-existing
-                extension points of the Thing Description deliverable.
-                The Working Group will define the policy and requirements in order to include 
-                references to separate binding documents, which specify the individual bindings.
-                These references will be either informative or normative, as appropriate.
+                This specification defines the Web of Things Thing Description information model and its JSON-LD serialization. 
+		This deliverable will add new features and address issues discovered during implementation.
               </p>
 
               <p class="draft-status"><b>Draft state:</b>No draft</p>
-              <p class="milestone todo"><b>Expected completion:</b> TBD</p>
-              <p class="todo"><b>Adopted Draft:</b>TBD</p>
-	          </dd>
+              <p class="milestone"><b>Expected completion:</b>1 June 2025</p>
+              <p><b>Adopted Draft:</b>
+              This will be a further iteration of the current <i>Web of Things (WoT) Thing Description</i> specification published
+              at <a href="https://www.w3.org/TR/wot-thing-description11/">https://www.w3.org/TR/wot-thing-description11/</a>,
+              as a Candidate Recommendation on 19 January 2023.</p>
           </dl>
 
-          <dt id="profiles-deliverable" class="spec">Web of Things (WoT) Profile</dt>
+          <dt id="profiles-deliverable" class="spec">Profile</dt>
           <dd>
             <p>
               This specification defines a profiling mechanism to enable out-of-the-box interoperability between
@@ -312,16 +338,16 @@
               basic HTTP-based profile.
             </p>
             <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/wot-profile/">Working Draft</a></p>
-            <p class="milestone todo"><b>Expected completion:</b>TBD</p>
+            <p class="milestone"><b>Expected completion:</b>1 November 2023</p>
           </dd>
-          <dt id="profiles-deliverable-next" class="spec">Web of Things (WoT) Profile (Update)</dt>
+          <dt id="profiles-deliverable-next" class="spec">Profile (Update)</dt>
           <dd>
             <p>
-              This specification is an update to the WoT Profile specification, with an updated profiling mechanism
-              and additional normative profiles as appropriate.
+              This specification is an update to the WoT Profile specification, with
+              additional normative profiles as appropriate.
             </p>
             <p class="draft-status"><b>Draft state:</b> No draft</p>
-            <p class="milestone todo"><b>Expected completion:</b>TBD</p>
+            <p class="milestone"><b>Expected completion:</b>1 June 2025</p>
           </dd>
         </dl>
         </section>
@@ -504,8 +530,7 @@
           <dt> <a href="https://opcfoundation.org/">OPC Foundation</a>
           <dd>
             For coordination on the development of the OPC UA Binding for the W3C Web of Things.
-            A Memorandum of Understanding (MoU) / Multi-Organization Cooperation Agreement (MOCA) will be considered in
-            order to establish a formal relationship.
+            A formal agreement between the OPC Foundation and the W3C is being considered to establish an official relationship.
           </dd>
           </dt>
           <dt><a href="https://echonet.jp/english/">ECHONET Consortium</a>
@@ -565,6 +590,9 @@
         <dd>For collaboration and coordination of the technical realization of the use of ECLASS in the W3C Thing
           Description.</dd>
         </dt>
+        <dt><a href="https://www.eclass.eu/en.html">ITU-T</a>
+          <dd>Coordinating smart city and digital twin use cases and aligning terminology definitions.</dd>
+          </dt>
         </dl>
 
       </section>
@@ -651,15 +679,23 @@
         with any objections.
       </p>
       <p>
-        To afford asynchronous decisions and organizational deliberation, any resolution (including publication
-        decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+        To afford asynchronous decisions and organizational deliberation, resolutions 
+        both proposed and taken in a face-to-face meeting or teleconference will be considered provisional.
 
-        A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based
-        survey), with a response period from one week to 10 working days, depending on the chair's evaluation of the
+        A call for consensus (CfC) will be issued for all such resolutions (via email)
+        with a response period from 5 to 10 working days, depending on the Chairs' evaluation of the
         group consensus on the issue.
 
         If no objections are raised by the end of the response period, the resolution will be considered to have
         consensus as a resolution of the Working Group.
+      </p>
+      <p>
+        In some cases, resolutions can be announced and proposed in advance, by circulating an email to the group
+        with concrete proposed text for the resolution.  In these cases, the announcement can be considered the 
+        call for consensus (CfC) and when the resolution is made by the group, it can be considered final, at the 
+        discretion of the Chairs, if sufficient time (5 to 10 working days, at the discretion of the Chairs, as above)
+        has been allowed for asynchronous input.  
+        This process will be followed especially for publication decisions which are then effective immediately.
       </p>
       <p>
         All decisions made by the group should be considered resolved unless and until new information becomes available
