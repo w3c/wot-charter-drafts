@@ -46,6 +46,14 @@ As decided in the [WebConf on 27 Apr 2016](https://www.w3.org/2016/04/27-wot-min
 * [15 Mar 2023](https://www.w3.org/2023/03/15-wot-minutes.html) - Scribe: Sebastian/Kaz
 * [16 Mar 2023](https://www.w3.org/2023/03/16-wot-minutes.html) - Scribe: Kaz
 
+### Session 7
+* [22 Mar 2023](https://www.w3.org/2023/03/22-wot-minutes.html) - Scribe: Sebastian/Kaz
+* [23 Mar 2023](https://www.w3.org/2023/03/23-wot-minutes.html) - Scribe: Sebastian/Kaz
+
+### Session 8
+* [27 Mar 2023](https://www.w3.org/2023/03/27-wot-minutes.html) - Scribe: Luca
+* [29 Mar 2023](https://www.w3.org/2023/03/29-wot-minutes.html) - Scribe: Sebastian/Kaz
+
 ## How to participate
 
 Check [How to Get Involved](https://github.com/w3c/wot#how-to-get-involved) if you are unsure how to open a pull-request.
