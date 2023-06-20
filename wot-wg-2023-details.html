@@ -204,7 +204,9 @@
           <dt>
             <a href="#onboarding-workitem"><strong>Onboarding</strong></a> (Architecture, Discovery):
           </dt>
-          <dd>Define lifecycle process to establish mutual trust and identification.</dd>
+          <dd>Define a lifecycle process to establish mutual trust and identification so
+          that secure communication and appropriate levels of authentication can
+          be established between sets of devices.</dd> 
           <dt>
             <a href="#timeseries-workitem"><strong>Timeseries</strong></a> (Thing Description, Binding Templates):
           </dt>
@@ -286,13 +288,45 @@
     </section>
     <section>
       <h2 id="onboarding-workitem">Onboarding</h2>
-      <p>In order to establish secure communications in some contexts, for example on a LAN, some form of onboarding
-      process to establish mutual trust between Things and Consumers is needed. Having a prescriptive (but optional)
-      process for this would be useful. Onboarding is part of the larger WoT Thing lifecycle which is described in the
-      Architecture document. In this work item we will define mechanisms to perform secure minimum-effort onboarding of
-      Things that conforms to the security and privacy requirements of specific deployment scenarios and use cases.
-      This work item complements the work that is done for device discovery, and is in particular useful when
-      registering TDs with a TD Directory service, however is also applicable for other use cases.</p>
+      <p>In order to establish secure communications in some contexts
+      a process to establish mutual trust between Things and Consumers is needed. 
+      Having a prescriptive (but optional)
+      process for this would be useful. 
+    </p><p>
+      In particular, the goal of the 
+      onboarding process would be allow encrypted communications to 
+      be used on a LAN, including establishing and exchanging
+      keying material among a set of devices without requiring fixed URLs
+      or use of a CA.
+      The keying material could, for example, take the form of certificates
+      containing public keys that can be used to identify devices and
+      also to establish mutual TLS or DTLS encrypted communication channels.
+      A pairwise onboarding process would involve the exchange of this
+      material between a Thing and a Consumer and a process or set of processes
+      that can be used to verify the level
+      of authorization to invoke affordances on the Thing.
+      In order to onboard sets of devices, group keys or a special "onboarding"
+      role can be used to establish transitive trust.
+    </p><p>
+      Onboarding is part of the larger WoT Thing lifecycle which is described in the
+      Architecture document. 
+      In this work item we will define mechanisms to perform secure minimum-effort 
+      trust establishment and identity confirmation among sets of
+      devices (both Things and Consumers)
+      that conforms to the security and privacy requirements of specific deployment 
+      scenarios and use cases.
+    </p><p>
+      This work item complements the work that is done for device discovery, 
+      and is in particular useful when
+      registering TDs with a TD Directory service, 
+      however is also applicable for other use cases.
+      However, establishing identity and mutual trust would take place
+      prior to registration with discovery services, and onboarding itself
+      would not require registration with discovery services.
+    </p>
+    <p>
+    It must be possible for people with disabilities to navigate the onboarding process for Things independently. This means that any services, apps, or physical interactions that are necessary to the onboarding (or reconfiguration) process will need to be designed to be accessible, and function correctly with Assistive Technologies that Consumers may be using.
+    </p>
     </section>
     <section>
       <h2 id="sec-ontology-workitem">Security Scheme Ontology</h2>
