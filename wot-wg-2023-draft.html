@@ -82,7 +82,7 @@
 
     <p class="mission">
       The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/wot">Web of Things Working Group</a>
-      is to counter the fragmentation of the IoT through the specification of building blocks
+      is to counter the fragmentation of the Internet of Things (IoT) through the specification of building blocks
       that enable easy integration of IoT devices and services across IoT platforms and application domains.
       <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
       These building blocks complement and enhance the use of existing standards; provide a common description 
@@ -178,7 +178,7 @@
       not easily interoperate.
       This is a concern as much of the value of the IoT can only be obtained when devices and services from different vendors
       can be used together.
-      The standards developed by WoT are intended to address this issue by defining additional building blocks to allow systems from 
+      The standards developed by Web of Things (WoT) are intended to address this issue by defining additional building blocks to allow systems from 
       different "ecosystems" to interoperate.
       The WoT WG will focus on IoT standards for commercial and industrial deployments and ecosystems.
       As part of its work the WoT WG will aim to build strong liaisons with related organizations.  
@@ -309,7 +309,7 @@
             <p><b>Adopted Draft:</b>
             This will be an update of the current <i>Web of Things (WoT) Architecture</i> specification published
             at <a href="https://www.w3.org/TR/wot-architecture11/">https://www.w3.org/TR/wot-architecture11/</a>,
-            as a Candidate Recommendation on 19 January 2023.</p>
+            as a Proposed Recommendation on 11 July 2023.</p>
         </dd>
           <dt id="discovery-deliverable" class="spec">Discovery (Update)</dt>
           <dd>
@@ -324,7 +324,7 @@
             <p><b>Adopted Draft:</b>
               This will be a revision of the current <i>Web of Things (WoT) Discovery</i> specification published
               at <a href="https://www.w3.org/TR/wot-discovery/">https://www.w3.org/TR/wot-discovery/</a>,
-              as a Candidate Recommendation on 19 January 2023.</p>
+              as a Proposed Recommendation on 11 July 2023.</p>
             </dd>
             <dt id="thing-description-deliverable" class="spec">Thing Description (Update)</dt>
             <dd>
@@ -341,9 +341,8 @@
               <p><b>Adopted Draft:</b>
               This will be a further iteration of the current <i>Web of Things (WoT) Thing Description</i> specification published
               at <a href="https://www.w3.org/TR/wot-thing-description11/">https://www.w3.org/TR/wot-thing-description11/</a>,
-              as a Candidate Recommendation on 19 January 2023.</p>
-          </dl>
-
+              as a Proposed Recommendation on 11 July 2023.</p>
+          </dd>
           <dt id="profiles-deliverable" class="spec">Profile</dt>
           <dd>
             <p>
@@ -355,6 +354,12 @@
             <p class="milestone"><b>Expected CR Transition:</b>Q4 2023</p>
 	    <p class="milestone"><b>Expected PR Transition:</b>Q1 2024</p>
 	    <p class="milestone"><b>Expected REC Transition:</b>Q3 2024</p>
+	    <p class="milestone"><b>Exclusion Draft:</b>
+          <a href="https://www.w3.org/TR/2020/WD-wot-profile-20201124/">
+              https://www.w3.org/TR/2020/WD-wot-profile-20201124/</a><br/>
+          associated <a href="https://www.w3.org/mid/cfe-7674-9b112cc6cb00f02c7c746e57df72668e3189a63f@w3.org">Call for Exclusion</a> on 2020-11-24 ended on 2021-04-23<br/>
+          Produced under Working Group Charter:
+          <a href="https://www.w3.org/2020/01/wot-wg-charter.html">https://www.w3.org/2020/01/wot-wg-charter.html</a></p>
           </dd>
           <dt id="profiles-deliverable-next" class="spec">Profile (Update)</dt>
           <dd>
@@ -438,17 +443,20 @@
       <p>To promote interoperability, all changes made to specifications
         in Candidate Recommendation
         or to features that have deployed implementations
-        should have <a href="https://www.w3.org/2019/02/testing-policy.html">tests</a>.
+          should have <a href="https://www.w3.org/2019/02/testing-policy.html">tests</a>.</p>
 
-        <!-- Horizontal review -->
-      <p>Each specification should contain sections detailing all known security and privacy implications for
-        implementers, Web authors, and end users.</p>
-      <!--
-	  <p><i class="todo">For specifications of technologies that directly impact user experience, such as content technologies, as well as protocols and APIs which impact content: </i>
-		Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
-		recommendations for maximising accessibility in implementations.</p>
--->
-
+      <!-- Horizontal review -->
+      <p>Each specification should contain sections detailing security
+         and privacy implications for implementers, Web authors, and end
+         users, as well as recommendations for mitigations. There should
+         be a clear description of the residual risk to the user or
+         operator of that protocol after threat mitigation has been
+         deployed.</p>
+	    <p>Each specification should contain a section on accessibility
+         that describes the benefits and impacts, including ways
+         specification features can be used to address them, and
+         recommendations for maximising accessibility in
+         implementations.</p>
     </section>
 
     <section id="coordination">
@@ -969,7 +977,15 @@
                   <i class="todo">[dd monthname yyyy]</i>
                 </td>
                 <td>
-                  <p class="todo">[description of change to charter, with link to new deliverable item in charter] <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.</p>
+                    <ul>
+                        <li>New charter.</li>
+                        <li>Added Michael Koster to the co-Chairs.</li>
+                        <li>Removed Team Contact, Dave Raggett.</li>
+                        <li>Added further clarification on the motivation and background.</li>
+                        <li>Simplified the description on the scope.</li>
+                        <li>Updated the descriptions on the normative deliverables: <a href="#wot-arch-update">Architecture (Update)</a>, <a href="#discovery-deliverable">Discovery (Update)</a>, <a href="#thing-description-deliverable">Thing Description (Update)</a>, <a href="#profiles-deliverable">Profile</a> and <a href="#profiles-deliverable-next">Profile Update</a>.</li>
+                        <li>Updated the list of the coordination on W3C groups and external standardization organizations based on the recent situation.</li>
+                    </ul>
                 </td>
               </tr>
             </tbody>
@@ -995,7 +1011,7 @@
 
   <footer>
     <address>
-      <i class="todo"><a href="mailto:">[team contact name]</a></i>
+      <a href="mailto:ashimura@w3.org">Kaz Ashimura</a>
     </address>
 
     <p class="copyright">Copyright © 2023</i> <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
