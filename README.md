@@ -1,7 +1,8 @@
 # W3C Web of Things Group Charter Drafts
 ## WoT WG Charter 2023
-* [Working document](https://github.com/w3c/wot-charter-drafts/blob/main/wot-wg-2023-draft.html)
-  * [Rendered document](https://w3c.github.io/wot-charter-drafts/wot-wg-2023-draft.html)
+* [Working WG document](https://github.com/w3c/wot-charter-drafts/blob/main/wot-wg-2023-draft.html)
+  * [Rendered WG document](https://w3c.github.io/wot-charter-drafts/wot-wg-2023-draft.html)
+* [Rendered IG document](https://w3c.github.io/wot-charter-drafts/wot-ig-2023-draft.html)
   
 # Process
 To do: should be updated to follow latest process documented here: https://www.w3.org/Guide/process/charter.html.
