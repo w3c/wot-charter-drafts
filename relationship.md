@@ -1,4 +1,4 @@
-# Relationship among WoT Groups
+# [DRAFT] Relationship among WoT Groups
 
 This document explains how different WoT groups within W3C can/should be linked to each other.
 
