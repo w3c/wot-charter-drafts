@@ -2,7 +2,7 @@
 
 This document explains how different WoT groups within W3C can/should be linked to each other.
 
-- WoT Working Group (WG): Responsible for writing normative and informative W3C Technical Reports (TRs), as well as establishing liaisons with related SDOs.
+- WoT Working Group (WG): Responsible for writing normative and informative W3C Technical Reports (TRs) which are the deliverables of the WG, as well as establishing liaisons with related SDOs.
 - WoT Interest Group (IG): Responsible for doing official outreach, collecting use cases to extract requirements, and organizing plugfests.
 - Related Community Groups (CGs): They can participate in the activities of the WG or IG through well-defined mechanisms in addition to their own activities. See below for more details.
 
@@ -11,7 +11,7 @@ An overview figure is also available, which will be split to each activity later
 
 ![Overview Image](./images/wot-groups-relationship.drawio.png)
 
-## Technical Report process
+## Technical Report / Deliverable process
 
 Involved Groups: WG, IG
 
