@@ -122,25 +122,25 @@
 
       <p class="mission">
         The <strong>mission</strong> of the 
-	<a href="https://www.w3.org/groups/ig/wot">Web of Things Interest Group</a> is 
-	to support the efforts of the <a href="https://www.w3.org/groups/wg/wot">Web of Things Working Group</a> by
-	identifying appropriate standardization targets through engagement with stakeholders
-	inside and outside the W3C
-	and by collection and analysis of use cases and requirements.
-	The W3C Web of Things standards seek to counter the fragmentation of the 
-        Internet of Things by complementing and enhancing 
-	available standards through Web technology, with an emphasis on
-        interconnecting existing Internet of Things platforms, devices, gateways, and services.
-        We aim to reduce costs through the global reach of Web standards,
-	to enable open markets of services,
-	and to unleash the power of the network effect.
+	      <a href="https://www.w3.org/groups/ig/wot">Web of Things Interest Group</a> is 
+        to support the efforts of the <a href="https://www.w3.org/groups/wg/wot">Web of Things Working Group</a> by
+        identifying appropriate standardization targets through engagement with stakeholders
+        inside and outside the W3C
+        and by collection and analysis of use cases and requirements.
+	      The W3C Web of Things standards seek to counter the fragmentation of the 
+        Internet of Things through the specification of building blocks that 
+        enable easy integration of IoT devices and services across IoT platforms 
+        and application domains. These building blocks complement and enhance the 
+        use of existing standards; provide a common description across different 
+        ecosystems, standards, and communities; and provide prescriptive definitions 
+        where appropriate.
         As a W3C Interest Group, we are seeking to build a deeper understanding of
-	stakeholder needs
-	by investigating a wide variety of use cases across multiple verticals,
-	including consumer, industrial, agricultural, environmental, retail, home, and smart city scenarios.
+        stakeholder needs
+        by investigating a wide variety of use cases across multiple verticals,
+        including consumer, industrial, agricultural, environmental, retail, home, and smart city scenarios.
         This work is intended to identify demand for further standards-track work within 
-	the Web of Things Working Group, other W3C working groups as appropriate,
-	and to align W3C Web of Things standards with related standards via liaisons.
+        the Web of Things Working Group, other W3C working groups as appropriate,
+        and to align W3C Web of Things standards with related standards.
       </p>
 
 <!--
@@ -174,7 +174,7 @@
               Start date
             </th>
             <td>
-              <i class="todo">1 January 2024 (Estimated; date of the "Call for Participation", when the charter is approved)</i>
+              <i class="todo">1 April 2024 (Estimated; date of the "Call for Participation", when the charter is approved)</i>
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -182,7 +182,7 @@
               End date
             </th>
             <td>
-              <i class="todo">31 December 2025</i> (Estimated; Start date + 2 years)
+              <i class="todo">31 March 2026</i> (Estimated; Start date + 2 years)
             </td>
           </tr>
           <tr>
@@ -225,27 +225,24 @@
       <div id="background" class="background">
         <h2>Motivation and Background</h2>
         <p>
-          The Internet of Things (IoT) suffers from a lack of interoperability across platforms.
-          As a result developers are faced with data silos, high integration and maintenance costs, and limited market potential.
-          Existing IoT standards address only limited ecosystems and do not provide interoperability across domains.
-          The current IoT is like the Internet before the World Wide Web, with competing incompatible hypertext systems.
-          The W3C is applying lessons learned from the World Wide Web to the Internet of Things to create the Web of Things.
+          Currently the IoT is highly fragmented with a multitude of different standards and ecosystems which often do not 
+          easily interoperate. This is a concern as much of the value of the IoT can only be obtained when devices and 
+          services from different vendors can be used together. The standards developed by Web of Things (WoT) are intended 
+          to address this issue by defining additional building blocks to allow systems from different "ecosystems" to 
+          interoperate,focused on IoT standards for commercial and industrial deployments and ecosystems.
         </p>
         <p>
-          To achieve this goal for cross-platform and cross-domain interoperability,
-          the <a href="https://www.w3.org/groups/wg/wot">Web of Things Working Group</a> has developed a first set of standardized building blocks.
-          The core idea is based upon rich metadata that describes the data and possible interactions (i.e., affordances) exposed to applications,
+          WoT building blocks bridge between disparate IoT ecosystems by providing rich metadata that describes the data and affordances exposed to applications, through the <i>Properties, Actions, Events</i> interaction model,
           and the communications and security requirements for platforms to communicate effectively.
-          The central documents are the <a href="https://www.w3.org/TR/wot-architecture/">WoT Architecture</a> and 
-          <a href="https://www.w3.org/TR/wot-thing-description/">WoT Thing Description</a> with its <i>Properties, Actions, Events</i> interaction model.
+          The central documents are the <a href="https://www.w3.org/TR/wot-architecture11/">WoT Architecture</a> and 
+          <a href="https://www.w3.org/TR/wot-thing-description11/">WoT Thing Description</a>.
         </p>
         <p>
-          The <a href="https://www.w3.org/groups/ig/wot">Web of Things Interest Group</a> continues its work to support the WoT Working Group 
+          The <a href="https://www.w3.org/groups/ig/wot">Web of Things Interest Group</a> continues its work to support the 
+          <a href="https://www.w3.org/groups/wg/wot">Web of Things Working Group</a> 
           and to explore opportunities for new standards-track work within W3C.
-          The priority in this third charter period is gaining additional practical experience with the in-development building blocks in the field
-          to enable open markets of services on the scale of the Web.
-          To achieve this goal, the Interest Group is seeking to broaden the range of participants to provide the necessary skills
-          and resources for real-world application scenarios in different verticals.
+          The priority in this fourth charter period is to refine the use cases and requirements for the ongoing development of
+          Web of Things standardized building blocks by the WoT Working Group.
         </p>
       </div>
 
@@ -259,26 +256,19 @@
             <p style="text-align:center;font-weight:bold;">Scope Summary</p>
             <ul>
                 <li>Support the Web of Things Working Group</li>
-                <li>Organize and run interoperability and testing events,
+                <li>Organize and run interoperability test events,
                     including events for specific vertical industries, to evaluate
                     the current working assumptions in regard to the Web of Things</li>
-                <li>Reach out and collaborate with interested organizations, 
-                    industry specific and infrastructure vendors, 
-                    and communities in support of the Interest Group's mission</li>
-                <li>Develop supporting materials such as implementation guidelines and tutorials</li>
-                <li>Explore areas and identify work that is ready for transfer to the W3C Recommendation Track</li>
+                <li>Develop use cases and functional requirements for the WoT Working Group to refine into 
+                    technical requirements and specifications</li>
+                <li>Oversee the Marketing Taks Force</li>
             </ul>
         </div>
 
         <p>
           <a href="./wot-ig-2023_files/wot-ig-2019-relationship.png"><img id="relationships" src="./wot-ig-2023_files/wot-ig-relationship.png" alt="relationship between WoT IG and WG"></a>
-          The Web of Things Interest Group (WoT IG) is a forum for discussion of ideas relating to the Web of Things
-          and is intended to complement the role of the Web of Things Working Group (WoT WG).
-          In particular, the WoT IG will propose new work items based upon new requirements, use cases,
-          and discussions with IoT developer communities, 
-          standards development organizations,
-          industry alliances,
-          and vertical industry solution and infrastructure providers.
+          The Interest Group serves as an entry point for new participants in Web of Things standardization, early in the process for use case and requirements generation, and with existing and developing standards in interoperability test events.
+          In particular, the WoT IG will submit new use cases and functional requirements to the WoT Working Group, and organize interoperability test events for hands-on evaluation of WoT standards and work in progress.
           Conversely, the WoT IG will consider new topics that are submitted to it by the WoT WG.
         </p>
 
