@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="216.60545mm"
+   height="182.3244mm"
+   viewBox="0 0 216.60545 182.3244"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   sodipodi:docname="wot-ig-2024-relationship.svg"
+   inkscape:export-filename="wot-ig-2024-figure.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.1515087"
+     inkscape:cx="402.94963"
+     inkscape:cy="307.85699"
+     inkscape:window-width="2256"
+     inkscape:window-height="1705"
+     inkscape:window-x="709"
+     inkscape:window-y="48"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     inkscape:export-bgcolor="#ffffffff" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect33"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect31"
+       is_visible="true"
+       lpeversion="1" />
+    <linearGradient
+       id="swatch28"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop28" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect21"
+       is_visible="true"
+       lpeversion="1" />
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="3"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="none">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect19"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect18"
+       is_visible="true"
+       lpeversion="1" />
+    <rect
+       x="250.49773"
+       y="180.68422"
+       width="364.53917"
+       height="65.921873"
+       id="rect4" />
+    <rect
+       x="250.49773"
+       y="180.68422"
+       width="310.8262"
+       height="66.596779"
+       id="rect5" />
+    <rect
+       x="250.49773"
+       y="180.68422"
+       width="315.92078"
+       height="134.95721"
+       id="rect9" />
+    <rect
+       x="250.49773"
+       y="180.68422"
+       width="552.17035"
+       height="84.468834"
+       id="rect10" />
+    <rect
+       x="250.49773"
+       y="180.68422"
+       width="311.90494"
+       height="150.66956"
+       id="rect11" />
+    <rect
+       x="250.49773"
+       y="180.68422"
+       width="310.8262"
+       height="66.596779"
+       id="rect12" />
+    <rect
+       x="250.49773"
+       y="180.68422"
+       width="546.44208"
+       height="73.464043"
+       id="rect13" />
+    <rect
+       x="250.49773"
+       y="180.68422"
+       width="310.8262"
+       height="66.596779"
+       id="rect14" />
+    <rect
+       x="250.49773"
+       y="180.68422"
+       width="310.8262"
+       height="66.596779"
+       id="rect15" />
+    <rect
+       x="250.49773"
+       y="180.68422"
+       width="310.8262"
+       height="66.596779"
+       id="rect16" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch28"
+       id="linearGradient28"
+       x1="325.56433"
+       y1="200.20361"
+       x2="486.84464"
+       y2="200.20361"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-40.743995,-14.250441)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Triangle);marker-end:url(#Triangle)"
+       d="M 67.967764,94.057686 103.93762,70.029395"
+       id="path21"
+       inkscape:path-effect="#path-effect23"
+       inkscape:original-d="M 67.967764,94.057686 C 79.882023,86.137543 91.909819,78.083467 103.93762,70.029395"
+       transform="matrix(-1,0,0,1,292.43286,-0.47613643)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect29"
+       width="84.376907"
+       height="10.912172"
+       x="155.68515"
+       y="76.0056" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Triangle);marker-end:url(#Triangle)"
+       d="M 67.967764,94.057686 103.93762,70.029395"
+       id="path18"
+       inkscape:path-effect="#path-effect18"
+       inkscape:original-d="M 67.967764,94.057686 C 79.882023,86.137543 91.909819,78.083467 103.93762,70.029395" />
+    <rect
+       style="fill:#fac15c;fill-opacity:0.4;stroke:#000000;stroke-width:0.265;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect1"
+       width="215.63065"
+       height="52.14819"
+       x="41.098526"
+       y="14.382941"
+       ry="0"
+       rx="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.155474;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2"
+       width="128.50089"
+       height="42.417297"
+       x="46.19381"
+       y="19.054661" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.115999;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3"
+       width="71.46476"
+       height="42.456772"
+       x="178.92056"
+       y="19.034924" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,0,-16.933338)"
+       id="text3"
+       style="font-style:normal;font-weight:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect4);display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="119.85062"
+       y="0"><tspan
+         x="266.52716"
+         y="207.48363"
+         id="tspan19">Interested Parties, Vendors
+</tspan><tspan
+         x="337.22071"
+         y="240.817"
+         id="tspan20">&amp; Communities</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,106.3626,-16.933338)"
+       id="text4"
+       style="font-style:normal;font-weight:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect5);display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="119.85062"
+       y="0"><tspan
+         x="370.33771"
+         y="207.48363"
+         id="tspan21">Other
+</tspan><tspan
+         x="372.65774"
+         y="240.817"
+         id="tspan22">SDOs</tspan></text>
+    <rect
+       style="fill:#bee2f4;fill-opacity:1;stroke:#000000;stroke-width:0.265;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6"
+       width="57.636452"
+       height="42.468582"
+       x="40.876495"
+       y="97.345726" />
+    <rect
+       style="fill:#ee6666;fill-opacity:0.4;stroke:#000000;stroke-width:0.265;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect7"
+       width="60.056648"
+       height="42.466419"
+       x="197.16029"
+       y="97.346779" />
+    <rect
+       style="fill:#00bdff;fill-opacity:0.52;stroke:#000000;stroke-width:0.187271;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect8"
+       width="215.70837"
+       height="26.033508"
+       x="41.059662"
+       y="170.44769"
+       ry="0"
+       rx="0" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-21.948399,56.842359)"
+       id="text8"
+       style="font-style:normal;font-weight:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect9);display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-dasharray:none"
+       x="25.597061"
+       y="0"><tspan
+         x="250.49805"
+         y="208.99609"
+         id="tspan24"><tspan
+   style="font-weight:bold;font-size:32px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans Bold'"
+   id="tspan23">   WoT IG</tspan>
+</tspan><tspan
+         x="250.49805"
+         y="247.48363"
+         id="tspan25">- Run PlugFests
+</tspan><tspan
+         x="250.49805"
+         y="280.817"
+         id="tspan26">- Write IG Notes</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,12.170835,130.17525)"
+       id="text9"
+       style="font-style:normal;font-weight:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10);display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="119.85062"
+       y="0"><tspan
+         x="295.07583"
+         y="207.48363"
+         id="tspan27">Other W3C Groups including WoT CGs</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,133.46556,56.318109)"
+       id="text10"
+       style="font-style:normal;font-weight:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect11);display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="14.970321"
+       y="0"><tspan
+         x="250.49805"
+         y="208.99609"
+         id="tspan29"><tspan
+   style="font-weight:bold;font-size:32px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans Bold'"
+   id="tspan28">  WoT WG</tspan>
+</tspan><tspan
+         x="250.49805"
+         y="247.48363"
+         id="tspan30">- Write specs
+</tspan><tspan
+         x="250.49805"
+         y="280.817"
+         id="tspan31">- Write test suites</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect28"
+       width="84.376907"
+       height="10.912172"
+       x="43.502186"
+       y="76.0056" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-23.406689,28.527062)"
+       id="text11"
+       style="font-style:normal;font-weight:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect12);display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="119.85062"
+       y="0"><tspan
+         x="256.59082"
+         y="207.48363"
+         id="tspan32">Outreach, Collaboration</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,96.033759,28.651448)"
+       id="text13"
+       style="font-style:normal;font-weight:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect14);display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+       x="119.85062"
+       y="0"><tspan
+         x="324.28432"
+         y="207.48363"
+         id="tspan33">Spec. Review</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,39.827024,75.89064)"
+       id="text14"
+       style="font-style:normal;font-weight:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect15);display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="119.85062"
+       y="0"><tspan
+         x="329.48431"
+         y="207.48363"
+         id="tspan34">Outsourcing</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,41.021831,50.213841)"
+       id="text15"
+       style="font-style:normal;font-weight:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect16);display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="119.85062"
+       y="0"><tspan
+         x="316.2576"
+         y="207.48363"
+         id="tspan35">Input/Support</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="M 98.524842,107.08566 H 195.85702"
+       id="path19"
+       inkscape:path-effect="#path-effect19"
+       inkscape:original-d="m 98.524842,107.08566 c 32.618628,2.29289 64.975408,1.14645 97.332178,0"
+       transform="matrix(0.95676963,0,0,1,4.259265,0)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="M 98.524842,107.08566 H 195.85702"
+       id="path20"
+       inkscape:path-effect="#path-effect21"
+       inkscape:original-d="m 98.524842,107.08566 c 32.618628,2.29289 64.975408,1.14645 97.332178,0"
+       transform="matrix(-0.95676963,0,0,1,290.65449,16.933338)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Triangle);marker-end:url(#Triangle)"
+       d="M 67.967764,94.057686 103.93762,70.029395"
+       id="path30"
+       inkscape:path-effect="#path-effect31"
+       inkscape:original-d="M 67.967764,94.057686 C 79.882023,86.137543 91.909819,78.083467 103.93762,70.029395"
+       transform="matrix(-1,0,0,1,174.42795,73.07807)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Triangle);marker-end:url(#Triangle)"
+       d="M 67.967764,94.057686 103.93762,70.029395"
+       id="path31"
+       inkscape:path-effect="#path-effect33"
+       inkscape:original-d="M 67.967764,94.057686 C 79.882023,86.137543 91.909819,78.083467 103.93762,70.029395"
+       transform="translate(119.59185,73.02504)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect30"
+       width="115.3376"
+       height="10.912172"
+       x="89.270653"
+       y="150.08865" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,8.5630439,103.05622)"
+       id="text12"
+       style="font-style:normal;font-weight:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect13);display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="119.85062"
+       y="0"><tspan
+         x="312.62499"
+         y="207.48363"
+         id="tspan36">Exploration, Coordination, Review</tspan></text>
+  </g>
+</svg>
