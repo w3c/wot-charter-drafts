@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
-   sodipodi:docname="wot-ig-2024-figure.svg"
+   sodipodi:docname="wot-ig-2024-relationship.svg"
    inkscape:export-filename="wot-ig-2024-figure.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -28,8 +28,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1.1515087"
-     inkscape:cx="402.51541"
-     inkscape:cy="307.85698"
+     inkscape:cx="402.94963"
+     inkscape:cy="307.85699"
      inkscape:window-width="2256"
      inkscape:window-height="1705"
      inkscape:window-x="709"
@@ -99,8 +99,8 @@
     <rect
        x="250.49773"
        y="180.68422"
-       width="310.8262"
-       height="66.596779"
+       width="364.53917"
+       height="65.921873"
        id="rect4" />
     <rect
        x="250.49773"
@@ -221,13 +221,13 @@
        style="font-style:normal;font-weight:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect4);display:inline;fill:#000000;fill-opacity:1;stroke:none"
        x="119.85062"
        y="0"><tspan
-         x="255.1241"
+         x="266.52716"
          y="207.48363"
-         id="tspan1">Interest Parties, Vendors
+         id="tspan19">Interested Parties, Vendors
 </tspan><tspan
-         x="310.36426"
+         x="337.22071"
          y="240.817"
-         id="tspan2">&amp; Communities</tspan></text>
+         id="tspan20">&amp; Communities</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,106.3626,-16.933338)"
@@ -237,11 +237,11 @@
        y="0"><tspan
          x="370.33771"
          y="207.48363"
-         id="tspan3">Other
+         id="tspan21">Other
 </tspan><tspan
          x="372.65774"
          y="240.817"
-         id="tspan4">SDOs</tspan></text>
+         id="tspan22">SDOs</tspan></text>
     <rect
        style="fill:#bee2f4;fill-opacity:1;stroke:#000000;stroke-width:0.265;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect6"
@@ -274,17 +274,17 @@
        y="0"><tspan
          x="250.49805"
          y="208.99609"
-         id="tspan6"><tspan
+         id="tspan24"><tspan
    style="font-weight:bold;font-size:32px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans Bold'"
-   id="tspan5">   WoT IG</tspan>
+   id="tspan23">   WoT IG</tspan>
 </tspan><tspan
          x="250.49805"
          y="247.48363"
-         id="tspan7">- Run PlugFests
+         id="tspan25">- Run PlugFests
 </tspan><tspan
          x="250.49805"
          y="280.817"
-         id="tspan8">- Write IG Notes</tspan></text>
+         id="tspan26">- Write IG Notes</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,12.170835,130.17525)"
@@ -292,9 +292,9 @@
        style="font-style:normal;font-weight:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10);display:inline;fill:#000000;fill-opacity:1;stroke:none"
        x="119.85062"
        y="0"><tspan
-         x="301.31585"
+         x="295.07583"
          y="207.48363"
-         id="tspan9">Other W3C Groups including WoT CG</tspan></text>
+         id="tspan27">Other W3C Groups including WoT CGs</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,133.46556,56.318109)"
@@ -304,17 +304,17 @@
        y="0"><tspan
          x="250.49805"
          y="208.99609"
-         id="tspan11"><tspan
+         id="tspan29"><tspan
    style="font-weight:bold;font-size:32px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans Bold'"
-   id="tspan10">  WoT WG</tspan>
+   id="tspan28">  WoT WG</tspan>
 </tspan><tspan
          x="250.49805"
          y="247.48363"
-         id="tspan12">- Writ specs
+         id="tspan30">- Write specs
 </tspan><tspan
          x="250.49805"
          y="280.817"
-         id="tspan13">- Write test suites</tspan></text>
+         id="tspan31">- Write test suites</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect28"
@@ -331,7 +331,7 @@
        y="0"><tspan
          x="256.59082"
          y="207.48363"
-         id="tspan14">Outreach, Collaboration</tspan></text>
+         id="tspan32">Outreach, Collaboration</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,96.033759,28.651448)"
@@ -341,7 +341,7 @@
        y="0"><tspan
          x="324.28432"
          y="207.48363"
-         id="tspan15">Spec. Review</tspan></text>
+         id="tspan33">Spec. Review</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,39.827024,75.89064)"
@@ -351,7 +351,7 @@
        y="0"><tspan
          x="329.48431"
          y="207.48363"
-         id="tspan16">Outsourcing</tspan></text>
+         id="tspan34">Outsourcing</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,41.021831,50.213841)"
@@ -361,7 +361,7 @@
        y="0"><tspan
          x="316.2576"
          y="207.48363"
-         id="tspan17">Input/Support</tspan></text>
+         id="tspan35">Input/Support</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
        d="M 98.524842,107.08566 H 195.85702"
@@ -406,6 +406,6 @@
        y="0"><tspan
          x="312.62499"
          y="207.48363"
-         id="tspan18">Exploration, Coordination, Review</tspan></text>
+         id="tspan36">Exploration, Coordination, Review</tspan></text>
   </g>
 </svg>
